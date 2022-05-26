@@ -7,12 +7,12 @@ APP_URL=http://localhost
 LOG_CHANNEL=stack
 
 DB_CONNECTION=mysql
-DB_HOST=172.16.0.76
+DB_HOST=localhost
 DB_PORT=3306
 DB_DATABASE=website_rsudkota
 DB_USERNAME=
 DB_PASSWORD=
-OTHER_DOMAIN = http://rsudkm.online 
+OTHER_DOMAIN =  
 
 BROADCAST_DRIVER=log
 CACHE_DRIVER=file
