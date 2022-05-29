@@ -427,7 +427,7 @@
                             <form id=" color_chang" class="main_form">
                                 <div class="row">
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <input class="form-control" placeholder="Nama" type="text" Nama="Name">
+                                        <input class="form-control" placeholder="Name" type="text" name="Name">
                                     </div>
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                         <input class="form-control" placeholder="Email" type="text" name="Email">
