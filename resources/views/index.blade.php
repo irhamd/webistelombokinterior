@@ -136,7 +136,8 @@
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="img_box padding_top0">
-                                                        <figure><img style="border-radius: 5px" src="images/img.jpg" alt="#" /></figure>
+                                                        <figure><img style="border-radius: 5px" src="images/img.jpg"
+                                                                alt="#" /></figure>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
@@ -145,7 +146,10 @@
                                                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                                                 <div class="img_box">
                                                                     <h3>Desain Interior Terbaik </h3>
-                                                                    <p>Ada banyak variasi bagian Lorem Ipsum yang tersedia, tetapi sebagian besar telah mengalami perubahan dalam beberapa bentuk, sesuai dengan kebutuhan anda
+                                                                    <p>Ada banyak variasi bagian Lorem Ipsum yang
+                                                                        tersedia, tetapi sebagian besar telah mengalami
+                                                                        perubahan dalam beberapa bentuk, sesuai dengan
+                                                                        kebutuhan anda
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -234,7 +238,8 @@
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="img_box padding_top0">
-                                                        <figure><img style="border-radius: 5px" src="images/img_two.jpg" alt="#" /></figure>
+                                                        <figure><img style="border-radius: 5px" src="images/img_two.jpg"
+                                                                alt="#" /></figure>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
@@ -252,7 +257,8 @@
                                                             </div>
                                                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                                                 <div class="img_box">
-                                                                    <figure><img style="border-radius: 5px" src="images/img2.jpg" alt="#" />
+                                                                    <figure><img style="border-radius: 5px"
+                                                                            src="images/img2.jpg" alt="#" />
                                                                     </figure>
                                                                 </div>
                                                             </div>
@@ -290,7 +296,7 @@
                         <div class="col-md-12 padding_bottom">
                             <div class="row d_flex">
                                 <div class="col-md-6">
-                                    <div class="designs_img" >
+                                    <div class="designs_img">
                                         <figure><img class="img-bordered" src="images/our1.png"></figure>
                                     </div>
                                 </div>
@@ -421,17 +427,17 @@
                             <form id=" color_chang" class="main_form">
                                 <div class="row">
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <input class="form-control" placeholder="Name" type="text" name="Name">
+                                        <input class="form-control" placeholder="Nama" type="text" Nama="Name">
                                     </div>
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                         <input class="form-control" placeholder="Email" type="text" name="Email">
                                     </div>
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <input class="form-control" placeholder="Phone number" type="text"
-                                            name="Phone number">
+                                        <input class="form-control" placeholder="Nomor HP" type="text"
+                                            name="Nomor HP">
                                     </div>
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                                        <textarea class="textarea" placeholder="Pesan" type="text" name="Pesan"></textarea>
                                     </div>
                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                         <button class="send">Kirim</button>
@@ -525,6 +531,8 @@
                                 <p>Copyright 2019 @<a href="https://html.design/">Free Html Templates</a></p>
                             </div>
                         </div>
+                    </div>
+                </div>
             </footer>
             <!-- end footer -->
         </div>
@@ -565,18 +573,18 @@
         // Australia.
         function initMap() {
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 11,
+                zoom: 13,
                 center: {
-                    lat: 40.645037,
-                    lng: -73.880224
+                    lat: -8.568492,
+                    lng: 116.079669, 
                 },
             });
 
             var image = 'images/maps-and-flags.png';
             var beachMarker = new google.maps.Marker({
                 position: {
-                    lat: 40.645037,
-                    lng: -73.880224
+                    lat: -8.568492,
+                    lng: 116.079669, 
                 },
                 map: map,
                 icon: image

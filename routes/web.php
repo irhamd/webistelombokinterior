@@ -14,6 +14,7 @@ Route::group(['middleware' => ['cekmaintenance']], function () {
     Route::get('/posting', [PostingController::class, 'riwayatPosting']);
     Route::get('/single', [PostingController::class, 'single']);
     Route::get('/profil', [PostingController::class, 'profil']);
+    Route::get('/cari-produk', [PostingController::class, 'cariProduk']);
 
 });
 
