@@ -366,8 +366,7 @@
                                             </div>
                                         </p>
 
-                                        <h2 class="profile__name">Anita Simmons Anita Simmons Anita Simmons Anita
-                                            Simmons </h2>
+                                        <h2 class="profile__name">Kitchen Set Minimalis Dinding Heksagon </h2>
                                         <img alt="Anita Simmons" src="images/our1.png" />
                                     </a>
                                 </li>
