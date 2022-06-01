@@ -277,7 +277,7 @@
             <div class="copyright">
                 <div class="container">
                     <div class="row text-center">
-                        <p>Copyright 2022 @<a href="https://html.design/">Free Html Templates</a></p>
+                        <p>Copyright 2022 @<a href="https://html.design/">YudishRaden</a></p>
                         <ul class="sociel">
                             <li> <a href="Javascript:void(0)"><i class="fa fa-facebook-f"></i></a>
                             </li>

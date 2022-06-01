@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="website/css/styleAdd.css">
     <!-- Responsive-->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- fevicon -->
@@ -47,11 +48,11 @@
                     <i class="fa fa-arrow-left"></i>
                 </div>
                 <ul class="list-unstyled components">
-                    <li class="active"> <a href="index.html">Beranda </a></li>
-                    <li> <a href="#designs"> Desain</a></li>
-                    <li> <a href="#service">Service</a></li>
+                    <li class="active"> <a href="/"> <i class="fa fa-home"></i> &nbsp;Beranda </a></li>
+                    <li> <a href="/cari-produk"> <i class="fa fa-cube"></i> &nbsp;Desain</a></li>
+                    <li> <a href="#service"> <i class="fa fa-puzzle-piece"></i> &nbsp;Service</a></li>
                     {{-- <li> <a href="#client">Clients</a></li> --}}
-                    <li> <a href="#contact">Hubungi Kami</a></li>
+                    <li> <a href="#contact"> <i class="fa fa-volume-control-phone"></i> &nbsp; Hubungi Kami</a></li>
                 </ul>
             </nav>
         </div>
@@ -66,7 +67,7 @@
                                 <div class="full">
                                     <div class="center-desk">
                                         <div class="logo">
-                                            <a href="index.html"><img src="images/logo.png" alt="#"></a>
+                                            <a href="/"><img src="images/logo.png" alt="#"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -128,7 +129,7 @@
                                                 <h1><strong class="black_bold"> LOMBOK </strong></h1>
                                                 <h1 style="margin-top: -30px">INTERIOR</h1>
                                                 <p>Penyedia pelayanan terbesar di NTB </p>
-                                                <a class="read_more" href="#design">Lihat Lebih Banyak</a> <a
+                                                <a class="read_more" href="/cari-produk">Lihat Lebih</a> <a
                                                     class="read_more" href="Javascript:void(0)">About</a>
                                             </div>
                                         </div>
@@ -309,7 +310,7 @@
                                             polos, ILOvers bisa mencoba menggunakan dekorasi keramik motif.
                                             Misalnya dengan inspirasi keramik motif heksagon yang mampu meninggalkan
                                             kesan estetis yang dapat menyeimbangkan interior dapur. </p>
-                                        <a class="read_more" href="Javascript:void(0)">Lihat Lebih Banyak</a>
+                                        <a class="read_more" href="/cari-produk">Lihat Lebih</a>
                                     </div>
                                 </div>
                             </div>
@@ -326,12 +327,12 @@
                                             English. Many desktop publishing packages and web page editors now use Lorem
                                             Ipsum as their default model text, and a search for 'lorem ipsum' will
                                             uncover many web sites st</p>
-                                        <a class="read_more" href="Javascript:void(0)">Lihat Lebih Banyak</a>
+                                        <a class="read_more" href="/cari-produk">Lihat Lebih</a>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="designs_img padding_top0 img-rounded">
-                                        <figure><img class="img-bordered" src="images/our2.png"></figure>
+                                        <figure><img class="img-bordered" src="images/our2.jpg"></figure>
                                     </div>
                                 </div>
                             </div>
@@ -339,6 +340,82 @@
                     </div>
                 </div>
             </div>
+
+
+            <div>
+                <div class="container">
+                    <br><br>
+                    <div class="titlepage">
+                        <h2> <span class="black_bg">Galery </span> Desain</h2>
+                        <p>It is a long established fact that a reader will be distracted by the readable
+                            content </p>
+                    </div>
+                    <article class="flow">
+                        <div class="team">
+                            <ul class="auto-grid" role="list">
+                                <li>
+                                    <a href="https://swop.link/cool" target="_blank" class="profile">
+                                        <p>
+                                            Hover or focus over each card to see the
+                                            person's job title slide in and the colour treatment
+                                            change.
+                                            <div style="display: flex">
+                                                <p> <i class="fa fa-eye" style="color: rgb(83, 63, 12)"></i> 142 </p>
+                                                <p> &nbsp;</p>
+                                                <p> <i class="fa fa-comments" style="color: rgb(83, 63, 12)"></i> 2 </p>
+                                            </div>
+                                        </p>
+
+                                        <h2 class="profile__name">Anita Simmons Anita Simmons Anita Simmons Anita
+                                            Simmons </h2>
+                                        <img alt="Anita Simmons" src="images/our1.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://swop.link/cool" target="_blank" class="profile">
+                                        <p>Creative Director</p>
+                                        <h2 class="profile__name">Celina Harris</h2>
+                                        <img alt="Anita Simmons" src="images/our4.jpg" />
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://swop.link/cool" target="_blank" class="profile">
+                                        <p>Technical Lead</p>
+                                        <h2 class="profile__name">Ruby Morris</h2>
+                                        <img alt="Anita Simmons" src="images/our2.jpg" />
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://swop.link/cool" target="_blank" class="profile">
+                                        <p>Designer</p>
+                                        <h2 class="profile__name">Nicholas Castro</h2>
+                                        <img alt="Anita Simmons" src="images/our3.jpg" />
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://swop.link/cool" target="_blank" class="profile">
+                                        <p>Developer</p>
+                                        <h2 class="profile__name">Marc Dixon</h2>
+                                        <img alt="Anita Simmons" src="images/our4.jpg" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://swop.link/cool" target="_blank" class="profile">
+                                        <p>Intern</p>
+                                        <h2 class="profile__name">Chad Chadson</h2>
+                                        <img alt="Anita Simmons" src="images/our5.jpg" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+
             <!-- end designs -->
             <!-- service -->
             <div id="service" class="service">
@@ -370,7 +447,7 @@
                                     content of a page when looking at its layout. The point of using Lorem Ipsum is that
                                     it has a more-or-less normal distribution of letters, as opposed to using 'Content
                                     here, content here', making it look</p>
-                                <a class="read_more" href="Javascript:void(0)">Lihat Lebih Banyak</a>
+                                <a class="read_more" href="/cari-produk">Lihat Lebih</a>
                             </div>
                         </div>
                         <div class="col-md-7">
@@ -461,19 +538,20 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <h2>Newsletter</h2>
-                                <form class="news">
+                                <h2>Lombok Interior</h2>
+                                <br>
+                                {{-- <form class="news">
                                     <input class="newslatter" placeholder="Enter Your Email" type="text"
                                         name=" Enter Your Email">
                                     <button class="submit">Subscribe</button>
-                                </form>
+                                </form> --}}
                             </div>
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
                                 <div class="row">
                                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                                         <div class="address">
                                             <h3>About </h3>
-                                            <a href="index.html"> <img class="logo1" src="images/logo1.png"
+                                            <a href="/"> <img class="logo1" src="images/logo1.png"
                                                     alt="logo"></a>
                                             <ul class="sociel">
                                                 <li> <a href="Javascript:void(0)"><i class="fa fa-facebook-f"></i></a>
@@ -491,10 +569,10 @@
                                         <div class="address">
                                             <h3>Quick link </h3>
                                             <ul class="Links_footer">
-                                                <li class="active"><a href="index.html"> <i
-                                                            class="fa fa-angle-right" aria-hidden="true"></i>Home </a>
+                                                <li class="active"><a href="/"> <i class="fa fa-angle-right"
+                                                            aria-hidden="true"></i>Home </a>
                                                 </li>
-                                                <li><a href="#designs"><i class="fa fa-angle-right"
+                                                <li><a href="/cari-produk"><i class="fa fa-angle-right"
                                                             aria-hidden="true"></i>Desain </a> </li>
                                                 <li><a href="#service"><i class="fa fa-angle-right"
                                                             aria-hidden="true"></i> Service</a> </li>
@@ -576,7 +654,7 @@
                 zoom: 13,
                 center: {
                     lat: -8.568492,
-                    lng: 116.079669, 
+                    lng: 116.079669,
                 },
             });
 
@@ -584,7 +662,7 @@
             var beachMarker = new google.maps.Marker({
                 position: {
                     lat: -8.568492,
-                    lng: 116.079669, 
+                    lng: 116.079669,
                 },
                 map: map,
                 icon: image
