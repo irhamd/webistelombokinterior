@@ -50,7 +50,7 @@ body {
     color: #666666;
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
-    line-height: 1.80857;
+    /* line-height: 1.80857; */
     font-weight: normal;
     overflow-x: hidden;
 }
@@ -139,7 +139,7 @@ ol {
 
 p {
     margin: 0px;
-    font-weight: 500;
+    /* font-weight: 500; */
     font-size: 15px;
     line-height: 24px;
 }
@@ -499,7 +499,7 @@ button {
 
 .banner_main .text-bg h1 {
     color: #121110;
-    font-size: 120px;
+    font-size: 105px;
     line-height: 120px;
     padding-bottom: 20px;
     font-weight: 700;
@@ -815,6 +815,20 @@ ul.retail li a:hover {
     height: 100px;
     border-radius: 0px 0px 10px 0px;
 }
+
+.service_img .dalam{
+    position: absolute;
+    background: url(../images/logo1.png);
+    width: 240px;
+    background-repeat: no-repeat;
+    bottom: 0px;
+    right: 10px;
+    /* background-color: #f5f5f594; */
+    padding: 5px;
+    height: 100px;
+    border-radius: 0px 0px 10px 0px;
+}
+
 
 
 /** end clients section **/
@@ -1136,7 +1150,7 @@ ul.sociel1 li a:hover {
     width: 280px;
     position: fixed;
     top: 0;
-    left: -280px;
+    right: -280px;
     height: 100vh;
     z-index: 999;
     background: #fff;
@@ -1147,7 +1161,7 @@ ul.sociel1 li a:hover {
 }
 
 #sidebar.active {
-    left: 0;
+    right: 0;
 }
 
 #dismiss {
@@ -1214,8 +1228,8 @@ ul.sociel1 li a:hover {
 }
 
 #sidebar ul li a:hover {
-    color: goldenrod;
-    background: #fff;
+    color: black;
+    background: rgba(218, 165, 32, 0.445);
 }
 
 #sidebar ul li.active>a,

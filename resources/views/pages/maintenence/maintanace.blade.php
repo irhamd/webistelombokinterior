@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Website sedang di tutup .! </h1>
+    <h1> Website sedang di- <i> Maintanance  ! </i> </h1>
 </body>
 </html>
