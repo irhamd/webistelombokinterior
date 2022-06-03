@@ -73,7 +73,9 @@
 
                 <div class="col-md-6">
                     <div class="clients_img" style="border-radius: 4px">
-                        <img class="gambar" src="images/our1.png">
+                        <a href="/detailproduk">
+                            <img class="gambar" src="images/our1.png">
+                        </a>
                         <ul class="sociel1">
                             <li> <a href="Javascript:void(0)"><i class="fa fa-eye" style="color: grey">
                                     </i> </a> </li>
@@ -93,7 +95,7 @@
 
                         </ul>
                         <p>
-                            <a href="">
+                            <a href="/detailproduk">
                                 <h4 class="upper"> <b> Kitchen Set </b> </h4>
                             </a> <br>
                             Kitchen set merupakan salah satu elemen penting dalam dapur. Bukan hanya untuk
@@ -101,7 +103,7 @@
                             efek dekoratif pada interior dapur. Oleh karena itu agar pemilihan kitchen set tepat
                             dan sesuai dengan dapur di rumah, ada beberapa tips cara memilih kitchen set yang
                             harus diketahui.
-                            <b> <a class="" href="">Lihat ...</a> </b>
+                            <b> <a class="" href="/detailproduk">Lihat ...</a> </b>
                         </p>
                         <p class="dalam"> </p>
                     </div>
@@ -110,7 +112,9 @@
 
                 <div class="col-md-6">
                     <div class="clients_img" style="border-radius: 4px">
-                        <img class="gambar" src="images/our6.jpg">
+                        <a href="/detailproduk">
+                            <img class="gambar" src="images/our6.jpg">
+                        </a>
                         <ul class="sociel1">
                             <li> <a href="Javascript:void(0)"><i class="fa fa-eye" style="color: grey">
                                     </i> </a> </li>
@@ -130,7 +134,7 @@
 
                         </ul>
                         <p>
-                            <a href="">
+                            <a href="/detailproduk">
                                 <h4 class="upper"> <b> Kitchen Set </b> </h4>
                             </a> <br>
                             Kitchen set merupakan salah satu elemen penting dalam dapur. Bukan hanya untuk

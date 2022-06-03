@@ -19,7 +19,7 @@ class PostingController extends Controller
     public function cariProduk(Request $req)
     {
         $data = Posting::where('aktif', true)->paginate(12);
-        return view('pages/cariproduk', compact("data"));
+        return view('pages/produk/cariproduk', compact("data"));
     }
  
     public function dataPosting(Request $req)

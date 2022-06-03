@@ -6,7 +6,7 @@
     <div class="col-md-12 gradien1">
         <br />
         <div class="col-md-12">
-            <form action="/create-new-posting?id_posting={{ request()->get('id_post') }}" method="post"
+            <form action="/post-desain-baru?id_desain={{ request()->get('id_desain') }}" method="post"
                 data-toggle="validator" role="form" enctype="multipart/form-data">
                 @csrf
 
@@ -27,12 +27,12 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label> Nama Produk </label>
-                                <input name="long_title" value="{{ $edit ? $edit->long_title : '' }}" id="nosurat"
+                                <input name="namaproduk" value="{{ $edit ? $edit->long_title : '' }}" 
                                     type="text" class="form-control form-control-lg" required autocomplete="off">
                             </div>
                             <div class="form-group">
                                 <label> Kategori Produk </label>
-                                <select class="form-select form-select-lg form-control form-control-lg">
+                                <select class="form-select form-select-lg form-control form-control-lg" name="kategori">
                                     <option>Dapur</option>
                                     <option>Teras</option>
                                     <option>Kantor</option>
@@ -68,7 +68,7 @@
                                 <div class="nav-tabs-custom">
                                     <div class="tab-content">
                                         <div class="tab-pane active" id="tab_1">
-                                            <textarea name="body_posting" required id="postinger" class="form-control" style="height: 100vh;">
+                                            <textarea name="body_desain" required id="postinger" class="form-control" style="height: 100vh;">
                                             {{ $edit ? $edit->body : '' }}
                                         </textarea>
                                         </div>
