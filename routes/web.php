@@ -4,6 +4,7 @@ use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\auth\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\posting\PostingController;
+use App\Http\Controllers\produk\ProdukController;
 use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\posting\PostingController;
 
@@ -15,6 +16,7 @@ Route::group(['middleware' => ['cekmaintenance']], function () {
     Route::get('/single', [PostingController::class, 'single']);
     Route::get('/profil', [PostingController::class, 'profil']);
     Route::get('/cari-produk', [PostingController::class, 'cariProduk']);
+    Route::get('/detailproduk', [ProdukController::class, 'detailProduk']);
 
 });
 
