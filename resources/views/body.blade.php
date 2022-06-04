@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
         media="screen">
+    <script src=" {{ asset('website/tinymce/tinymce.min.js') }}"></script>
+
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -120,7 +122,7 @@
                     <div class="copyright">
                         <div class="container">
                             <div class="row">
-                                <p>Copyright 2019 @<a href="https://html.design/">Free Html Templates</a></p>
+                                <p>Copyright 2022<a href="">Fhd@team</a></p>
                             </div>
                         </div>
                     </div>

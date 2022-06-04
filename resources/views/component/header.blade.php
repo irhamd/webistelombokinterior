@@ -51,9 +51,48 @@
                                         alt="#" />lombok.interior</a>
                             </li class="d_none">
                             <li class="d_none">
-                                <a href="Javascript:void(0)">
+                                <a href="Javascript:void(0)" data-toggle="modal" data-target="#login">
                                     <img style="margin-left: 10px;" src="icon/5.png" alt="#" /></a>
                             </li>
+
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="login" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <form class="" method="POST" action="/auth-sign-in">
+                                            @csrf
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                                        <input class="form-control" placeholder="ID" type="text"
+                                                            name="sign_id">
+                                                    </div>
+                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12"
+                                                        style="margin-top: -10px">
+                                                        <input class="form-control" placeholder="password"
+                                                            type="password" name="password">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger"
+                                                    data-dismiss="modal">Batal</button>
+                                                <button type="submit" class="btn btn-warning">Login</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                             {{-- <li class="d_none">
                                 <a href="Javascript:void(0)"><img style="margin-right: 15px;"
                                         src="icon/4.png" alt="#" /></a>

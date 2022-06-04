@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\posting;
 
 use App\Http\Controllers\Controller;
+use App\Models\admin\Desain;
 use App\Models\admin\Posting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -18,8 +19,9 @@ class PostingController extends Controller
  
     public function cariProduk(Request $req)
     {
-        $data = Posting::where('aktif', true)->paginate(12);
-        return view('pages/cariproduk', compact("data"));
+
+        $data = Desain::where('aktif', true)->paginate(12);
+        return view('pages/produk/cariproduk', compact("data"));
     }
  
     public function dataPosting(Request $req)

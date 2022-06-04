@@ -7,10 +7,11 @@
     <!-- service -->
     <br>
     <div class="container">
+        <br>
         <div class="row">
             <div class=" col-xl-4 col-lg-4 col-md-4 col-sm-12">
                 <div class="titlepage">
-                    <h2> <span class="black_bg">Our </span> Services</h2>
+                    <h2> <span class="black_bg">Detail </span> Desain</h2>
                 </div>
             </div>
             <div class=" col-xl-8 col-lg-8 col-md-8 col-sm-12">
@@ -23,35 +24,34 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="service_img">
-                    <figure><img src="images/img333.jpg"></figure>
+                <div class="service_img w-100">
+                    <figure><img class="image-border" src="/post/upload/{{ $single->gambar }}"></figure>
                     <p class="dalam"> </p>
+                    <br>
                 </div>
             </div>
             <div class="col-md-12">
-                <ul class="sociel text-center" style="margin-top: 15px">
-                    <li> <a href="Javascript:void(0)"><i class="fa fa-eye" style="color: grey">
+                <ul class="sociel text-center">
+                    <li> <a href="Javascript:void(0)"><i class="fa fa-eye" style="color: grey; margin-top : -15px">
                             </i> </a> </li>
                     <li>
-                        <p style="padding: 3px 10px 0px 5px; "> 162 </p>
+                        <p style="padding: 3px 10px 0px 5px; "> {{ $single->view }} </p>
                     </li>
-                    <li> <a href="Javascript:void(0)"><i class="fa fa-comments-o" style="color: grey">
+                    <li> <a href="Javascript:void(0)"><i class="fa fa-comments-o" style="color: grey; margin-top : -15px">
                             </i> </a> </li>
                     <li>
-                        <p style="padding: 3px 10px 0px 5px; "> 0 </p>
+                        <p style="padding: 3px 10px 0px 5px; "> {{ $single->komentar }} </p>
                     </li>
-                    <li> <a href="Javascript:void(0)"><i class="fa fa-shopping-cart" style="color: grey"> </i> </a>
+                    <li> <a href="Javascript:void(0)"><i class="fa fa-shopping-cart"
+                                style="color: grey; margin-top : -15px"> </i> </a>
                     </li>
                     <li>
-                        <p style="padding: 3px 10px 0px 5px; "> 2 </p>
+                        <p style="padding: 3px 10px 0px 5px; "> {{ $single->beli }} </p>
                     </li>
                 </ul>
                 <div class="service_box">
-                    <h3>Design</h3>
-                    <p>It is a long established fact that a reader will be distracted by the readable
-                        content of a page when looking at its layout. The point of using Lorem Ipsum is that
-                        it has a more-or-less normal distribution of letters, as opposed to using 'Content
-                        here, content here', making it look</p>
+                    <h3>{{ $single->namaproduk }}</h3>
+                    <p> {{ $single->deskripsi }} </p>
                     <a class="read_more" href="/cari-produk">Pesan</a>
                 </div>
             </div>
@@ -64,26 +64,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="titlepage">
-                        <h2>What Is Say <span class="black"> Clients</span></h2>
-                        <strong></strong>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="clients_img">
+                    <div class="clients_img" style="padding: 20px 30px ; text-align: justify">
                         <i><img src="images/icon.png" alt="#" /></i>
-                        <p style="padding: 10px; text-align: justify">It is a long established fact that a reader will bQe distracted by the readable
-                            content of a page when looking at its of Lorem Ipsum as their default mo
-                            It is a long established fact that a reader will be distracted by the readable content of a page
-                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                            distribution of letters, as opposed to using 'Content here, content here', making it look
-                            It is a long established fact that a reader will be distracted by the readable content of a page
-                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                            distribution of letters, as opposed to using 'Content here, content here', making it look
-
-                        </p>
+                        <div class="col-md-12">
+                            <div class="titlepage">
+                                <h2>{{ $single->namaproduk }}</h2>
+                                <strong></strong>
+                            </div>
+                        </div>
+                        {!! html_entity_decode($single->body_desain) !!}
+                        <br><br>
                     </div>
                 </div>
 
