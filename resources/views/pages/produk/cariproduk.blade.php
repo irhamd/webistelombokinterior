@@ -70,156 +70,42 @@
             </div>
             <div class="row">
 
+                @foreach ($data as $item)
+                    <div class="col-md-6">
+                        <div class="clients_img" style="border-radius: 4px">
+                            <a href="/detailproduk?post_desain={{ $item->id }}">
+                                <img  class="gambar" src="/post/upload/{{ $item->gambar }}">
+                            </a>
+                            <ul class="sociel1">
+                                <li> <a href="Javascript:void(0)"><i class="fa fa-eye" style="color: grey">
+                                        </i> </a> </li>
+                                <li>
+                                    <p style="padding: 3px 10px 0px 5px"> {{ $item->view }} </p>
+                                </li>
+                                <li> <a href="Javascript:void(0)"><i class="fa fa-comments-o" style="color: grey">
+                                        </i> </a> </li>
+                                <li>
+                                    <p style="padding: 3px 10px 0px 5px"> {{ $item->komentar }} </p>
+                                </li>
+                                <li> <a href="Javascript:void(0)"><i class="fa fa-shopping-cart" style="color: grey"> </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <p style="padding: 3px 10px 0px 5px"> {{ $item->beli }} </p>
+                                </li>
 
-                <div class="col-md-6">
-                    <div class="clients_img" style="border-radius: 4px">
-                        <a href="/detailproduk">
-                            <img class="gambar" src="images/our1.png">
-                        </a>
-                        <ul class="sociel1">
-                            <li> <a href="Javascript:void(0)"><i class="fa fa-eye" style="color: grey">
-                                    </i> </a> </li>
-                            <li>
-                                <p style="padding: 3px 10px 0px 5px"> 162 </p>
-                            </li>
-                            <li> <a href="Javascript:void(0)"><i class="fa fa-comments-o" style="color: grey">
-                                    </i> </a> </li>
-                            <li>
-                                <p style="padding: 3px 10px 0px 5px"> 0 </p>
-                            </li>
-                            <li> <a href="Javascript:void(0)"><i class="fa fa-shopping-cart" style="color: grey"> </i> </a>
-                            </li>
-                            <li>
-                                <p style="padding: 3px 10px 0px 5px"> 2 </p>
-                            </li>
-
-                        </ul>
-                        <p>
-                            <a href="/detailproduk">
-                                <h4 class="upper"> <b> Kitchen Set </b> </h4>
-                            </a> <br>
-                            Kitchen set merupakan salah satu elemen penting dalam dapur. Bukan hanya untuk
-                            melengkapi kebutuhan di dalam dapur untuk kegiatan memasak, namun juga dapat memberi
-                            efek dekoratif pada interior dapur. Oleh karena itu agar pemilihan kitchen set tepat
-                            dan sesuai dengan dapur di rumah, ada beberapa tips cara memilih kitchen set yang
-                            harus diketahui.
-                            <b> <a class="" href="/detailproduk">Lihat ...</a> </b>
-                        </p>
-                        <p class="dalam"> </p>
+                            </ul>
+                            <p>
+                                <a href="/detailproduk?post_desain={{ $item->id }}">
+                                    <h4 class="upper"> <b> {{ $item->namaproduk }} </b> </h4>
+                                </a> <br>
+                                {{ $item->deskripsi }}
+                                <b> <a class="" href="/detailproduk?post_desain={{ $item->id }}">Lihat ...</a> </b>
+                            </p>
+                            <p class="dalam"> </p>
+                        </div>
                     </div>
-                </div>
-
-
-                <div class="col-md-6">
-                    <div class="clients_img" style="border-radius: 4px">
-                        <a href="/detailproduk">
-                            <img class="gambar" src="images/our6.jpg">
-                        </a>
-                        <ul class="sociel1">
-                            <li> <a href="Javascript:void(0)"><i class="fa fa-eye" style="color: grey">
-                                    </i> </a> </li>
-                            <li>
-                                <p style="padding: 3px 10px 0px 5px"> 162 </p>
-                            </li>
-                            <li> <a href="Javascript:void(0)"><i class="fa fa-comments-o" style="color: grey">
-                                    </i> </a> </li>
-                            <li>
-                                <p style="padding: 3px 10px 0px 5px"> 0 </p>
-                            </li>
-                            <li> <a href="Javascript:void(0)"><i class="fa fa-shopping-cart" style="color: grey"> </i> </a>
-                            </li>
-                            <li>
-                                <p style="padding: 3px 10px 0px 5px"> 2 </p>
-                            </li>
-
-                        </ul>
-                        <p>
-                            <a href="/detailproduk">
-                                <h4 class="upper"> <b> Kitchen Set </b> </h4>
-                            </a> <br>
-                            Kitchen set merupakan salah satu elemen penting dalam dapur. Bukan hanya untuk
-                            melengkapi kebutuhan di dalam dapur untuk kegiatan memasak, namun juga dapat memberi
-                            efek dekoratif pada interior dapur. Oleh karena itu agar pemilihan kitchen set tepat
-                            dan sesuai dengan dapur di rumah, ada beberapa tips cara memilih kitchen set yang
-                            harus diketahui.
-                            <b> <a class="" href="">Lihat ...</a> </b>
-                        <p class="dalam"> </p>
-
-                        </p>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6">
-                    <div class="clients_img" style="border-radius: 4px">
-                        <img class="gambar" src="images/our4.jpg">
-                        <ul class="sociel1">
-                            <li> <a href="Javascript:void(0)"><i class="fa fa-eye" style="color: grey">
-                                    </i> </a> </li>
-                            <li>
-                                <p style="padding: 3px 10px 0px 5px"> 162 </p>
-                            </li>
-                            <li> <a href="Javascript:void(0)"><i class="fa fa-comments-o" style="color: grey">
-                                    </i> </a> </li>
-                            <li>
-                                <p style="padding: 3px 10px 0px 5px"> 0 </p>
-                            </li>
-                            <li> <a href="Javascript:void(0)"><i class="fa fa-shopping-cart" style="color: grey"> </i> </a>
-                            </li>
-                            <li>
-                                <p style="padding: 3px 10px 0px 5px"> 2 </p>
-                            </li>
-
-                        </ul>
-                        <p>
-                            <a href="">
-                                <h4 class="upper"> <b> Kitchen Set </b> </h4>
-                            </a> <br>
-                            Kitchen set merupakan salah satu elemen penting dalam dapur. Bukan hanya untuk
-                            melengkapi kebutuhan di dalam dapur untuk kegiatan memasak, namun juga dapat memberi
-                            efek dekoratif pada interior dapur. Oleh karena itu agar pemilihan kitchen set tepat
-                            dan sesuai dengan dapur di rumah, ada beberapa tips cara memilih kitchen set yang
-                            harus diketahui.
-                            <b> <a class="" href="">Lihat ...</a> </b>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="clients_img" style="border-radius: 4px">
-                        <img class="gambar" src="images/our5.jpg">
-                        <ul class="sociel1">
-                            <li> <a href="Javascript:void(0)"><i class="fa fa-eye" style="color: grey">
-                                    </i> </a> </li>
-                            <li>
-                                <p style="padding: 3px 10px 0px 5px"> 162 </p>
-                            </li>
-                            <li> <a href="Javascript:void(0)"><i class="fa fa-comments-o" style="color: grey">
-                                    </i> </a> </li>
-                            <li>
-                                <p style="padding: 3px 10px 0px 5px"> 0 </p>
-                            </li>
-                            <li> <a href="Javascript:void(0)"><i class="fa fa-shopping-cart" style="color: grey"> </i> </a>
-                            </li>
-                            <li>
-                                <p style="padding: 3px 10px 0px 5px"> 2 </p>
-                            </li>
-
-                        </ul>
-                        <p>
-                            <a href="">
-                                <h4 class="upper"> <b> Kitchen Set </b> </h4>
-                            </a> <br>
-                            Kitchen set merupakan salah satu elemen penting dalam dapur. Bukan hanya untuk
-                            melengkapi kebutuhan di dalam dapur untuk kegiatan memasak, namun juga dapat memberi
-                            efek dekoratif pada interior dapur. Oleh karena itu agar pemilihan kitchen set tepat
-                            dan sesuai dengan dapur di rumah, ada beberapa tips cara memilih kitchen set yang
-                            harus diketahui.
-                            <b> <a class="" href="">Lihat ...</a> </b>
-                        </p>
-                    </div>
-                </div>
-
-
+                @endforeach
 
 
             </div>

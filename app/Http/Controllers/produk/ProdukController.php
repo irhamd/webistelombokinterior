@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\admin\Desain;
 use App\Models\admin\Posting;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use RealRashid\SweetAlert\Facades\Alert;
 
@@ -13,7 +14,7 @@ class ProdukController extends Controller
 {
     public function detailProduk(Request $req)
     {
-        try {
+        // try {
             // $alwaysshow = Posting::where('aktif', true)
             //     ->where('always', true)
             //     ->orderBy("created_at", "desc")
@@ -21,8 +22,12 @@ class ProdukController extends Controller
             //     ->get();
 
             if ($req->has('post_desain')) {
-                $id_desain = $req->query('post_desain');
+                $id_desain = $req['post_desain'];
                 $single = Desain::find($id_desain);
+                
+                $newV = Desain::where('id', $id_desain)->increment('view', 1);
+                // $single->view = $single->view +1 ; 
+                // $inc =  $single->Increment('view', 1);
                 if (!$single) {
                     return redirect("/");
                 }
@@ -30,9 +35,9 @@ class ProdukController extends Controller
             } else {
                 return redirect()->back();
             }
-        } catch (\Throwable $th) {
-            return redirect("/");
-        }
+        // } catch (\Throwable $th) {
+        //     return redirect("/");
+        // }
     }
 
   

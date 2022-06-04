@@ -10,7 +10,7 @@ class Desain extends Model
 {
     use HasFactory;
     protected $table = "designproduk_m";
-    protected $fillable = [];
+    protected $guarded = [''];
 
 
     public static function boot()

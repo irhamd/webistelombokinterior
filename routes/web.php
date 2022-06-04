@@ -21,8 +21,8 @@ Route::group(['middleware' => ['cekmaintenance']], function () {
 
 });
 
-// Route::group(['middleware' => ['auth']], function () {
-Route::group([], function () {
+Route::group(['middleware' => ['auth']], function () {
+// Route::group([], function () {
     // Route::group(['prefix' => 'admin'], function () {
         Route::post('/create-new-posting', [PostingController::class, 'createPosting']);
         Route::get('/data_posting', [PostingController::class, 'dataPosting']);

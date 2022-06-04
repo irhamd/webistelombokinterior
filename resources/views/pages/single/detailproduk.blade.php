@@ -7,6 +7,7 @@
     <!-- service -->
     <br>
     <div class="container">
+        <br>
         <div class="row">
             <div class=" col-xl-4 col-lg-4 col-md-4 col-sm-12">
                 <div class="titlepage">
@@ -24,12 +25,13 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="service_img w-100">
-                    <figure><img src="/post/upload/{{ $single->gambar }}"></figure>
+                    <figure><img class="image-border" src="/post/upload/{{ $single->gambar }}"></figure>
                     <p class="dalam"> </p>
+                    <br>
                 </div>
             </div>
             <div class="col-md-12">
-                <ul class="sociel text-center" style="margin-top: 15px">
+                <ul class="sociel text-center">
                     <li> <a href="Javascript:void(0)"><i class="fa fa-eye" style="color: grey; margin-top : -15px">
                             </i> </a> </li>
                     <li>
