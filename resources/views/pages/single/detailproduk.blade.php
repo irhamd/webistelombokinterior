@@ -24,8 +24,8 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="service_img w-100">
-                    <figure><img class="image-border" src="/post/upload/{{ $single->gambar }}"></figure>
+                <div class="service_img">
+                    <figure><img class="image-border h-100" src="/post/upload/{{ $single->gambar }}"></figure>
                     <p class="dalam"> </p>
                     <br>
                 </div>
