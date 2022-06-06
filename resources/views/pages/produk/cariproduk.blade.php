@@ -1,5 +1,23 @@
 @extends('body')
 @section('content')
+    <div class="fixed-bottom">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 alert bg-dark">
+            <div class="address">
+                <h3 class="text text-warning">Hubungi Kami </h3>
+                <ul class="loca">
+                    <li style="display:  flex">
+                        <a href="Javascript:void(0)"><img src="icon/loc.png" alt="#" />
+                        </a>
+                        Jln. Banda No. 9 Mataram <br> Gunungsari NTB
+                    </li>
+                    <li>
+                        <a href="Javascript:void(0)"><img src="icon/2.png" alt="#" /> &nbsp; <img src="icon/whatsapp.png" alt="#" /></a>(+62)
+                        813-3188-0750 &nbsp; <b class="text text-warning"> (Yuda) </b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -29,8 +47,7 @@
                                     </li>
                                     <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Perkantoran </a>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Kamar Tidur</a> </li>
+                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Kamar Tidur</a> </li>
                                     <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Ruang
                                             Kerja </a> </li>
                                 </ul>
@@ -74,7 +91,7 @@
                     <div class="col-md-6">
                         <div class="clients_img" style="border-radius: 4px">
                             <a href="/detailproduk?post_desain={{ $item->id }}">
-                                <img  class="gambar" src="/post/upload/{{ $item->gambar }}">
+                                <img class="gambar"    src="/post/upload/{{ $item->gambar }}" style="width: 100%;">
                             </a>
                             <ul class="sociel1">
                                 <li> <a href="Javascript:void(0)"><i class="fa fa-eye" style="color: grey">
@@ -100,7 +117,8 @@
                                     <h4 class="upper"> <b> {{ $item->namaproduk }} </b> </h4>
                                 </a> <br>
                                 {{ $item->deskripsi }}
-                                <b> <a class="" href="/detailproduk?post_desain={{ $item->id }}">Lihat ...</a> </b>
+                                <b> <a class="" href="/detailproduk?post_desain={{ $item->id }}">Lihat
+                                        ...</a> </b>
                             </p>
                             <p class="dalam"> </p>
                         </div>

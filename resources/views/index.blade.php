@@ -164,6 +164,8 @@
                     </div>
                 </div>
             </div>
+
+
             <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
                 <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
             </a>

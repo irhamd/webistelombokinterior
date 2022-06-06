@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 // 
 Route::group(['middleware' => ['cekmaintenance']], function () {
     Route::get('/', [HomeController::class, 'home']);
+    Route::get('/home', [HomeController::class, 'home'])->name('home');
     Route::get('/posting', [PostingController::class, 'riwayatPosting']);
     Route::get('/single', [PostingController::class, 'single']);
     Route::get('/profil', [PostingController::class, 'profil']);
