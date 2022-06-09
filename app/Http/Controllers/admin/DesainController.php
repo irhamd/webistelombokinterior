@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\admin\Desain;
 use App\Models\admin\Posting;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Str;
 
 class DesainController extends Controller
@@ -27,7 +29,7 @@ class DesainController extends Controller
             // $cari = Posting::find($req->query('id_post'));
         }
 
-        $data = Desain::get();
+        $data = Desain::where('aktif', true)->paginate(1);
         // dd($data);
         return view('admin/desain_produk/listproduk', compact("data"));
     }
@@ -35,10 +37,15 @@ class DesainController extends Controller
     {
         $edit = null;
         $query = $req->query('id_post');
+        $profil = DB::table('company_m')->where('aktif', true)->first();
+
         if (isset($query)) {
             $edit = Desain::find($req->query('id_post'));
         }
-        return view('admin/desain_produk/BuatDesain', compact("edit"));
+        $kategori = DB::table('kategoriproduk_m')->where('aktif', true)->get();
+        // dd($edit);
+
+        return view('admin/desain_produk/BuatDesain', compact("edit","profil","kategori"));
     }
 
     public function postDesainBaru(Request $req)
@@ -46,7 +53,7 @@ class DesainController extends Controller
         // try {
 
             // dd($req);
-            $id_desain =  $req->query('id_desain');
+            $id_desain =  $req->query('id_post');
             if ($id_desain) {
                 $post = Desain::find($id_desain);
             } else {
@@ -79,6 +86,16 @@ class DesainController extends Controller
         // Alert::success(' TITLE NYA APA ', ' PESAN BERHASIL / ERRORNYA APA');
         return back()->with('status', $status);
     }
+
+
+    public function hapusProduk(Request $req)
+    {
+        $hapus = Desain::where('id',$req['id'])->update([
+            "aktif" => false
+        ]);
+        return Redirect::back()->with('hapus', $hapus ? 1 : 0);
+    }
+
 }
 
  

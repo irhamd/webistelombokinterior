@@ -1,10 +1,61 @@
 @extends('body')
 @section('content')
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.all.min.js"
+        integrity="sha512-IZ95TbsPTDl3eT5GwqTJH/14xZ2feLEGJRbII6bRKtE/HC6x3N4cHye7yyikadgAsuiddCY2+6gMntpVHL1gHw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.all.min.js"></script>
+
+    <script>
+        function hapusProduk(id, nama) {
+            Swal.fire({
+                title: 'Hapus desain produk "' + nama + '" ?',
+                text: "Pastikan anda yakin untuk menghapus produk ini  .!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Ya, Hapus'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = '/hapus-desain?id=' + id
+                }
+            })
+        }
+
+        function ubahData(id) {
+            window.location.href = '/buat-desain-baru?id_post=' + id
+        }
+    </script>
+
+    @if (Session::has('hapus'))
+        @if (Session::get('hapus') == 1)
+            <script>
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Sukses !',
+                    text: 'Anda telah menghapus salah satu desain produk .',
+                    footer: '<a href="">iLo Interior </a>'
+                })
+            </script>
+        @else
+            <script>
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong!',
+                    footer: '<a href="">Why do I have this issue?</a>'
+                })
+            </script>
+        @endif
+    @endif
+
     <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 position-static fixed-top">
-                    <h2>Lombok Interior</h2>
+                    <h2>Lombok Interior </h2>
                     <form class="news">
                         <input class="newslatter" placeholder="Cari produk ..." type="text" name=" Enter Your Email">
                         <button class="submit">Cari</button>
@@ -97,14 +148,18 @@
 
                             </ul>
                             <br>
-                            <button class="btn btn-warning btn-sm"> <i class="fa fa-edit"></i> Ubah </button>
-                            <button class="btn btn-danger btn-sm"> <i class="fa fa-remove"></i> Hapus </button>
+                            <button class="btn btn-warning btn-sm" onclick="ubahData({{ $item->id }})"> <i
+                                    class="fa fa-edit"></i> Ubah </button>
+                            <button class="btn btn-danger btn-sm"
+                                onclick="hapusProduk({{ $item->id }}, '{{ $item->namaproduk }}')"> <i
+                                    class="fa fa-remove"></i> Hapus </button>
                             <p>
                                 <a href="/detailproduk?post_desain={{ $item->id }}">
                                     <h4 class="upper"> <b> {{ $item->namaproduk }} </b> </h4>
                                 </a> <br>
                                 {{ $item->deskripsi }}
-                                <b> <a class="" href="/detailproduk?post_desain={{ $item->id }}">Lihat ...</a> </b>
+                                <b> <a class="" href="/detailproduk?post_desain={{ $item->id }}">Lihat
+                                        ...</a> </b>
                             </p>
                             <p class="dalam"> </p>
                         </div>
@@ -112,9 +167,21 @@
                 @endforeach
 
 
+
+
+
             </div>
         </div>
     </div>
+    <p>
+        <div class="d-flex justify-content-center">
+            {!! $data->links() !!}
+        </div>   
+
+    
+
+
+    </p>
 
     <div class="copyright">
         <div class="container">

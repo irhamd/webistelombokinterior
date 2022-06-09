@@ -20,6 +20,7 @@ class ProdukController extends Controller
             //     ->orderBy("created_at", "desc")
             //     ->take(3)
             //     ->get();
+            $profil = DB::table('company_m')->where('aktif', true)->first();
 
             if ($req->has('post_desain')) {
                 $id_desain = $req['post_desain'];
@@ -31,7 +32,7 @@ class ProdukController extends Controller
                 if (!$single) {
                     return redirect("/");
                 }
-                return view('pages/single/detailproduk' ,compact("single"));
+                return view('pages/single/detailproduk' ,compact("single", "profil"));
             } else {
                 return redirect()->back();
             }

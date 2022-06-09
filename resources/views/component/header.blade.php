@@ -24,13 +24,12 @@
                             <li class="d_none">
                                 <a href="https://api.whatsapp.com/send/?phone=%2B6281331880750&text&app_absent=0"
                                     target="_blank">
-                                    <img style="margin-right: 15px;" src="icon/whatsapp.png" alt="#" />(+62)
-                                    813-3188-0750</a>
+                                    <img style="margin-right: 15px;" src="icon/whatsapp.png" alt="#" /> {{ $profil->nowa }} </a>
                             </li>
                             <li class="d_none">
                                 <a href="https://www.instagram.com/lombok.interior/?igshid=YmMyMTA2M2Y%3D"
                                     target="_blank"><img style="margin-right: 15px;" src="icon/3.png"
-                                        alt="#" />lombok.interior</a>
+                                        alt="#" /> {{ $profil->ig }}</a>
                             </li class="d_none">
                             <li class="d_none">
                                 @if (Auth::check())
