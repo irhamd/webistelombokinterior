@@ -104,6 +104,24 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="viewport">
+                    <ul class="list">
+                        <li class="item">1</li>
+                        <li class="item">2</li>
+                        <li class="item">3</li>
+                        <li class="item">4</li>
+                        <li class="item">5</li>
+                        <li class="item">6</li>
+                        <li class="item">7</li>
+                        <li class="item">8</li>
+                        <li class="item">9</li>
+                        <li class="item">10</li>
+                        <li class="item">11</li>
+                        <li class="item">12</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
 
@@ -173,15 +191,6 @@
             </div>
         </div>
     </div>
-    <p>
-        <div class="d-flex justify-content-center">
-            {!! $data->links() !!}
-        </div>   
-
-    
-
-
-    </p>
 
     <div class="copyright">
         <div class="container">

@@ -255,3 +255,103 @@ a:hover {
   border: 1px solid #ddd;
   padding: 5px
 }
+
+
+.list {
+  display: flex;
+  padding: 20px;
+  overflow-x: scroll;
+}
+
+.item {
+  height: 74px;
+  width: 164px;
+  flex-shrink: 0;
+}
+
+.item:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* 
+  The styling below is only for the decoration of this demo, 
+  it has no impact on scrolling or scroll behavior
+*/
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: goldenrod;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.list {
+  list-style: none;
+  border: -7px solid #fff;
+  background-color: #181818;
+  padding: 8px;
+  border-radius: 12px;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  color: #181818;
+  border-radius: 8px;
+  font-size: 18px;
+  /* text-shadow: 0 2px 1px rgba(0, 0, 0, 0.4); */
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 1);
+}
+
+.item:hover{
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+}
+
+.item:nth-child(4n + 1) {
+  background-color: #facd3d;
+}
+
+.item:nth-child(4n + 2) {
+  background-color: #d4ad2c;
+}
+
+.item:nth-child(4n + 3) {
+  background-color: #f1bd13;
+}
+
+.item:nth-child(4n + 4) {
+  background-color: #b9a255;
+}
+
+.item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.viewport {
+  /* max-width: 520px; */
+  /* width: calc(100% - 20px); */
+  margin-left: 10px;
+  margin-right: 10px;
+  width:  100%;
+}
+
+ 

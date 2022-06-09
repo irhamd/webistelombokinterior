@@ -11,7 +11,8 @@
                         Jln. Banda No. 9 Mataram <br> Gunungsari NTB
                     </li>
                     <li>
-                        <a href="Javascript:void(0)"><img src="icon/2.png" alt="#" /> &nbsp; <img src="icon/whatsapp.png" alt="#" /></a>(+62)
+                        <a href="Javascript:void(0)"><img src="icon/2.png" alt="#" /> &nbsp; <img src="icon/whatsapp.png"
+                                alt="#" /></a>(+62)
                         813-3188-0750 &nbsp; <b class="text text-warning"> (Yuda) </b>
                     </li>
                 </ul>
@@ -47,7 +48,8 @@
                                     </li>
                                     <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Perkantoran </a>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Kamar Tidur</a> </li>
+                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Kamar Tidur</a>
+                                    </li>
                                     <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Ruang
                                             Kerja </a> </li>
                                 </ul>
@@ -73,6 +75,15 @@
             </div>
         </div>
 
+        <div class="viewport">
+            <ul class="list">
+
+                @foreach ($kategori as $item)
+                    <li class="item">{{ $item->kategori  }}</li>
+                @endforeach
+
+            </ul>
+        </div>
     </div>
 
     <div id="client" class="clients">
@@ -91,7 +102,7 @@
                     <div class="col-md-6">
                         <div class="clients_img" style="border-radius: 4px">
                             <a href="/detailproduk?post_desain={{ $item->id }}">
-                                <img class="gambar"    src="/post/upload/{{ $item->gambar }}" style="width: 100%;">
+                                <img class="gambar" src="/post/upload/{{ $item->gambar }}" style="width: 100%;">
                             </a>
                             <ul class="sociel1">
                                 <li> <a href="Javascript:void(0)"><i class="fa fa-eye" style="color: grey">

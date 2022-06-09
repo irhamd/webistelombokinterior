@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\admin\Desain;
 use App\Models\admin\Posting;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use RealRashid\SweetAlert\Facades\Alert;
 
@@ -21,7 +22,8 @@ class PostingController extends Controller
     {
 
         $data = Desain::where('aktif', true)->paginate(12);
-        return view('pages/produk/cariproduk', compact("data"));
+        $kategori = DB::table('kategoriproduk_m')->where('aktif', true)->get();
+        return view('pages/produk/cariproduk', compact("data","kategori"));
     }
  
     public function dataPosting(Request $req)

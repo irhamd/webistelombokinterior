@@ -29,8 +29,9 @@ class DesainController extends Controller
             // $cari = Posting::find($req->query('id_post'));
         }
 
-        $data = Desain::where('aktif', true)->paginate(1);
-        // dd($data);
+        // $data = Desain::where('aktif', true)->paginate(1);
+        $data = Desain::where('aktif', true)->get();
+        // return $data;
         return view('admin/desain_produk/listproduk', compact("data"));
     }
     public function BuatDesain(Request $req)
