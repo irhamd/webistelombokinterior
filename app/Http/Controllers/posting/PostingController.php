@@ -21,18 +21,23 @@ class PostingController extends Controller
     public function cariProduk(Request $req)
     {
 
-        $cari = explode (" ", $req['cari']);
         $q = "";
+        $cari = $req['cari'] != "" ? explode (" ", $req['cari']) : [];
         
         // if( $cari->count == 0 )
         foreach ($cari as $value) {
             $q =$q. $value. '|';
         }
+
+        $q = $q.'abs' ;
         $data = Desain::where('aktif', true);
         if( isset( $req['id_kategori'] ) && $req['id_kategori'] > 0){
             $data = $data->where('id_kategori', $req['id_kategori']);
         }
-        $data = $data->whereraw(" namaproduk REGEXP '$cari[0]' ")->paginate(100);
+        if(isset( $req['cari'])){
+            $data = $data->whereraw(" namaproduk REGEXP '$q' ");
+        }
+        $data = $data->paginate(100);
         // return $q;
 
         $kategori = DB::table('kategoriproduk_m')->where('aktif', true)->get();

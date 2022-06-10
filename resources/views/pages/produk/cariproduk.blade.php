@@ -43,15 +43,13 @@
                             <div class="address">
                                 <h3>Kategori </h3>
                                 <ul class="Links_footer">
-                                    <li class="active"><a href=""> <i class="fa fa-angle-right"
-                                                aria-hidden="true"></i>Dapur </a>
+                                   
+                                    <li><a href="/cari-produk?id_kategori=1"><i class="fa fa-angle-right" aria-hidden="true"></i>Tempat Tidur </a>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Perkantoran </a>
+                                    <li><a href="/cari-produk?id_kategori=1"><i class="fa fa-angle-right" aria-hidden="true"></i>Kitchen Set</a>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Kamar Tidur</a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Ruang
-                                            Kerja </a> </li>
+                                    <li><a href="/cari-produk?id_kategori=6"><i class="fa fa-angle-right" aria-hidden="true"></i>Ruang Tamu </a> </li>
+                                    <li><a href="/cari-produk?id_kategori=5"><i class="fa fa-angle-right" aria-hidden="true"></i>Design </a> </li>
                                 </ul>
                             </div>
                         </div>
