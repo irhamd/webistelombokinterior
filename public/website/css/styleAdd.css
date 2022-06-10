@@ -335,11 +335,11 @@ a:hover {
 }
 
 .item:nth-child(4n + 3) {
-  background-color: #f1bd13;
+  background-color: #d3a612;
 }
 
 .item:nth-child(4n + 4) {
-  background-color: #b9a255;
+  background-color: #ddcc94;
 }
 
 .item:not(:last-child) {

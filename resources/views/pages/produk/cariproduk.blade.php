@@ -24,8 +24,8 @@
             <div class="row">
                 <div class="col-md-12 position-static fixed-top">
                     <h2>Lombok Interior</h2>
-                    <form class="news">
-                        <input class="newslatter" placeholder="Cari produk ..." type="text" name=" Enter Your Email">
+                    <form class="news" id="cari-form">
+                        <input class="newslatter" placeholder="Cari produk ..." type="text" name="cari">
                         <button class="submit">Cari</button>
                     </form>
                 </div>
@@ -79,7 +79,8 @@
             <ul class="list">
 
                 @foreach ($kategori as $item)
-                    <li class="item">{{ $item->kategori  }}</li>
+                    <li class="item"> <a href="/cari-produk?id_kategori={{ $item->id }}">
+                            {{ $item->kategori }} </a> </li>
                 @endforeach
 
             </ul>
@@ -137,9 +138,18 @@
                 @endforeach
 
 
+
             </div>
         </div>
     </div>
+
+    <p class="text-center">
+        @if ($data->count() == 0)
+            <center class="alert alert-danger">
+                <h1> Produk / desain tidak ditemukan ! </h1>
+            </center>
+        @endif
+    </p>
 
     <div class="copyright">
         <div class="container">

@@ -14,14 +14,27 @@ class PostingController extends Controller
 {
     public function riwayatPosting(Request $req)
     {
-        $data = Posting::where('aktif', true)->paginate(12);
+        $data = Posting::where('aktif', true)->paginate(100);
         return view('post/riwayat_berita', compact("data"));
     }
  
     public function cariProduk(Request $req)
     {
 
-        $data = Desain::where('aktif', true)->paginate(12);
+        $cari = explode (" ", $req['cari']);
+        $q = "";
+        
+        // if( $cari->count == 0 )
+        foreach ($cari as $value) {
+            $q =$q. $value. '|';
+        }
+        $data = Desain::where('aktif', true);
+        if( isset( $req['id_kategori'] ) && $req['id_kategori'] > 0){
+            $data = $data->where('id_kategori', $req['id_kategori']);
+        }
+        $data = $data->whereraw(" namaproduk REGEXP '$cari[0]' ")->paginate(100);
+        // return $q;
+
         $kategori = DB::table('kategoriproduk_m')->where('aktif', true)->get();
         return view('pages/produk/cariproduk', compact("data","kategori"));
     }
