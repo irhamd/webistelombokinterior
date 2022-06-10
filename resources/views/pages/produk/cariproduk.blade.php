@@ -12,8 +12,7 @@
                     </li>
                     <li>
                         <a href="Javascript:void(0)"><img src="icon/2.png" alt="#" /> &nbsp; <img src="icon/whatsapp.png"
-                                alt="#" /></a>(+62)
-                        813-3188-0750 &nbsp; <b class="text text-warning"> (Yuda) </b>
+                                alt="#" /></a>(+62) 813-3188-0750 &nbsp; <b class="text text-warning"> (Yuda) </b>
                     </li>
                 </ul>
             </div>
@@ -25,7 +24,7 @@
                 <div class="col-md-12 position-static fixed-top">
                     <h2>Lombok Interior</h2>
                     <form class="news" id="cari-form">
-                        <input class="newslatter" placeholder="Cari produk ..." type="text" name="cari">
+                        <input class="newslatter" placeholder="Cari produk ..." type="text" name="cari" value="{{ request()->get('cari') }}">
                         <button class="submit">Cari</button>
                     </form>
                 </div>
@@ -155,10 +154,10 @@
         @endif
     </p>
 
-    <div class="copyright">
+    <div class="copyright" style="margin-top: 0px">
         <div class="container">
             <div class="row text-center">
-                <p>Copyright 2022 @<a href="https://html.design/">YudishRaden</a></p>
+                <p>Copyright 2022 @<a href="/">Ir#Yudish</a></p>
                 <ul class="sociel">
                     <li> <a href="Javascript:void(0)"><i class="fa fa-facebook-f"></i></a>
                     </li>
