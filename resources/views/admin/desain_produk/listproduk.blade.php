@@ -44,8 +44,8 @@
                 Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
-                    text: 'Something went wrong!',
-                    footer: '<a href="">Why do I have this issue?</a>'
+                    text: 'Gagal Hapus produk !',
+                    footer: '<a href="">iLo Interior !</a>'
                 })
             </script>
         @endif
@@ -57,7 +57,7 @@
                 <div class="col-md-12 position-static fixed-top">
                     <h2>Lombok Interior </h2>
                     <form class="news">
-                        <input class="newslatter" placeholder="Cari produk ..." type="text" name=" Enter Your Email">
+                        <input class="newslatter" placeholder="Cari produk ..." type="text" name="cari">
                         <button class="submit">Cari</button>
                     </form>
                 </div>

@@ -23,11 +23,23 @@ class DesainController extends Controller
     }
     public function listDesain(Request $req)
     {
-        $cari = null;
-        $query = $req->query('cari');
-        if (isset($query)) {
-            // $cari = Posting::find($req->query('id_post'));
+        $q = "";
+        $cari = $req['cari'] != "" ? explode (" ", $req['cari']) : [];
+        
+        // if( $cari->count == 0 )
+        foreach ($cari as $value) {
+            $q =$q. $value. '|';
         }
+
+        $q = $q.'abs' ;
+        $data = Desain::where('aktif', true);
+        if( isset( $req['id_kategori'] ) && $req['id_kategori'] > 0){
+            $data = $data->where('id_kategori', $req['id_kategori']);
+        }
+        if(isset( $req['cari'])){
+            $data = $data->whereraw(" namaproduk REGEXP '$q' ");
+        }
+        $data = $data->paginate(100);
 
         // $data = Desain::where('aktif', true)->paginate(1);
         $data = Desain::where('aktif', true)->get();

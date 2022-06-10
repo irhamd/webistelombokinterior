@@ -43,13 +43,17 @@
                             <div class="address">
                                 <h3>Kategori </h3>
                                 <ul class="Links_footer">
-                                   
-                                    <li><a href="/cari-produk?id_kategori=1"><i class="fa fa-angle-right" aria-hidden="true"></i>Tempat Tidur </a>
+
+                                    <li><a href="/cari-produk?id_kategori=1"><i class="fa fa-angle-right"
+                                                aria-hidden="true"></i>Tempat Tidur </a>
                                     </li>
-                                    <li><a href="/cari-produk?id_kategori=1"><i class="fa fa-angle-right" aria-hidden="true"></i>Kitchen Set</a>
+                                    <li><a href="/cari-produk?id_kategori=1"><i class="fa fa-angle-right"
+                                                aria-hidden="true"></i>Kitchen Set</a>
                                     </li>
-                                    <li><a href="/cari-produk?id_kategori=6"><i class="fa fa-angle-right" aria-hidden="true"></i>Ruang Tamu </a> </li>
-                                    <li><a href="/cari-produk?id_kategori=5"><i class="fa fa-angle-right" aria-hidden="true"></i>Design </a> </li>
+                                    <li><a href="/cari-produk?id_kategori=6"><i class="fa fa-angle-right"
+                                                aria-hidden="true"></i>Ruang Tamu </a> </li>
+                                    <li><a href="/cari-produk?id_kategori=5"><i class="fa fa-angle-right"
+                                                aria-hidden="true"></i>Design </a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -77,8 +81,10 @@
             <ul class="list">
 
                 @foreach ($kategori as $item)
-                    <li class="item"> <a href="/cari-produk?id_kategori={{ $item->id }}">
-                            {{ $item->kategori }} </a> </li>
+                    <a href="/cari-produk?id_kategori={{ $item->id }}">
+                        <li class="item" style="margin-right: 5px">
+                            {{ $item->kategori }} </li>
+                    </a>
                 @endforeach
 
             </ul>
