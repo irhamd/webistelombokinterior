@@ -73,64 +73,45 @@
                 <div class="footer">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-12">
-                                <h2>Lombok Interior</h2>
-                                <br>
-                                {{-- <form class="news">
-                                    <input class="newslatter" placeholder="Enter Your Email" type="text"
-                                        name=" Enter Your Email">
-                                    <button class="submit">Subscribe</button>
-                                </form> --}}
-                            </div>
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
                                 <div class="row">
                                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                                         <div class="address">
-                                            <h3>About </h3>
-                                            <a href="/"> <img class="logo1" src="images/logo1.png"
-                                                    alt="logo"></a>
-                                            <ul class="sociel">
-                                                <li> <a href="Javascript:void(0)"><i class="fa fa-facebook-f"></i></a>
-                                                </li>
-                                                <li> <a href="Javascript:void(0)"><i class="fa fa-twitter"></i></a>
-                                                </li>
-                                                <li> <a href="Javascript:void(0)"><i class="fa fa-linkedin-square"
-                                                            aria-hidden="true"></i></a></li>
-                                                <li> <a href="Javascript:void(0)"><i class="fa fa-instagram"></i></a>
-                                                </li>
-                                            </ul>
+                                            <h3>Brand </h3>
+                                            <a href="/"> <img class="logo2" src="images/logo1.png" alt="logo"></a>
+            
                                         </div>
+                                        <br>
                                     </div>
                                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                                         <div class="address">
-                                            <h3>Quick link </h3>
+                                            <h3>Kategori </h3>
                                             <ul class="Links_footer">
-                                                <li class="active"><a href="/"> <i class="fa fa-angle-right"
-                                                            aria-hidden="true"></i>Home </a>
+            
+                                                <li><a href="/cari-produk?id_kategori=1"><i class="fa fa-angle-right"
+                                                            aria-hidden="true"></i>Tempat Tidur </a>
                                                 </li>
-                                                <li><a href="/cari-produk"><i class="fa fa-angle-right"
-                                                            aria-hidden="true"></i>Desain </a> </li>
-                                                <li><a href="#service"><i class="fa fa-angle-right"
-                                                            aria-hidden="true"></i> Service</a> </li>
-                                                {{-- <li><a href="#client"><i class="fa fa-angle-right"
-                                                            aria-hidden="true"></i>Clients </a> </li> --}}
-                                                <li><a href="#contact"><i class="fa fa-angle-right"
-                                                            aria-hidden="true"></i>Contact </a> </li>
+                                                <li><a href="/cari-produk?id_kategori=1"><i class="fa fa-angle-right"
+                                                            aria-hidden="true"></i>Kitchen Set</a>
+                                                </li>
+                                                <li><a href="/cari-produk?id_kategori=6"><i class="fa fa-angle-right"
+                                                            aria-hidden="true"></i>Ruang Tamu </a> </li>
+                                                <li><a href="/cari-produk?id_kategori=5"><i class="fa fa-angle-right"
+                                                            aria-hidden="true"></i>Design </a> </li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                                         <div class="address">
-                                            <h3>Keep in touch </h3>
+                                            <h3>Kontak Kami </h3>
                                             <ul class="loca">
-                                                <li>
-                                                    <a href="Javascript:void(0)"><img src="icon/1.png" alt="#" /></a>
-                                                    <span class="offf">Corporate Office
-                                                        Address:</span><br>There are many variations of <br>passages
+                                                <li style="display:  flex">
+                                                    <a href="Javascript:void(0)"><img src="icon/loc.png" alt="#" /></a>
+                                                    Jln. Banda No. 9 Mataram <br> Gunungsari NTB
                                                 </li>
                                                 <li>
-                                                    <a href="Javascript:void(0)"><img src="icon/2.png" alt="#" /></a>(
-                                                    +1234567890 )
+                                                    <a href="Javascript:void(0)"><img src="icon/2.png" alt="#" /></a>(+62)
+                                                    813-3188-0750
                                                 </li>
                                             </ul>
                                         </div>
@@ -139,13 +120,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="copyright">
-                        <div class="container">
-                            <div class="row">
-                                <p>Copyright 2022<a href="">Fhd@team</a></p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </footer>
             <!-- end footer -->

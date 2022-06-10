@@ -34,7 +34,7 @@ class PostingController extends Controller
         if( isset( $req['id_kategori'] ) && $req['id_kategori'] > 0){
             $data = $data->where('id_kategori', $req['id_kategori']);
         }
-        if(isset( $req['cari'])){
+        if(isset( $req['cari']) && $req['cari'] !=""){
             $data = $data->whereraw(" namaproduk REGEXP '$q' ");
         }
         $data = $data->paginate(100);

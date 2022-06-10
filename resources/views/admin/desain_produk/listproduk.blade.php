@@ -57,7 +57,8 @@
                 <div class="col-md-12 position-static fixed-top">
                     <h2>Lombok Interior </h2>
                     <form class="news">
-                        <input class="newslatter" placeholder="Cari produk ..." type="text" name="cari">
+                        <input class="newslatter" placeholder="Cari produk ..." type="text" name="cari"
+                            value="{{ request()->get('cari') }}">
                         <button class="submit">Cari</button>
                     </form>
                 </div>
@@ -75,15 +76,17 @@
                             <div class="address">
                                 <h3>Kategori </h3>
                                 <ul class="Links_footer">
-                                    <li class="active"><a href=""> <i class="fa fa-angle-right"
-                                                aria-hidden="true"></i>Dapur </a>
+
+                                    <li><a href="/list-desain?id_kategori=1"><i class="fa fa-angle-right"
+                                                aria-hidden="true"></i>Tempat Tidur </a>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Perkantoran </a>
+                                    <li><a href="/list-desain?id_kategori=1"><i class="fa fa-angle-right"
+                                                aria-hidden="true"></i>Kitchen Set</a>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            Kamar Tidur</a> </li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Ruang
-                                            Kerja </a> </li>
+                                    <li><a href="/list-desain?id_kategori=6"><i class="fa fa-angle-right"
+                                                aria-hidden="true"></i>Ruang Tamu </a> </li>
+                                    <li><a href="/list-desain?id_kategori=5"><i class="fa fa-angle-right"
+                                                aria-hidden="true"></i>Design </a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -107,6 +110,18 @@
             </div>
         </div>
 
+        <div class="viewport">
+            <ul class="list">
+
+                @foreach ($kategori as $item)
+                    <a href="/list-desain?id_kategori={{ $item->id }}">
+                        <li class="item" style="margin-right: 5px">
+                            {{ $item->kategori }} </li>
+                    </a>
+                @endforeach
+
+            </ul>
+        </div>
     </div>
 
     <div id="client" class="clients">
@@ -173,11 +188,17 @@
             </div>
         </div>
     </div>
-
-    <div class="copyright">
+    <p class="text-center">
+        @if ($data->count() == 0)
+            <center class="alert alert-danger">
+                <h1> "{{ request()->get('cari') }}" Produk / desain tidak ditemukan ! </h1>
+            </center>
+        @endif
+    </p>
+    <div class="copyright" style="margin-top: 0px">
         <div class="container">
             <div class="row text-center">
-                <p>Copyright 2022 @<a href="https://html.design/">YudishRaden</a></p>
+                <p>Copyright 2022 @<a href="">YudishRaden</a></p>
                 <ul class="sociel">
                     <li> <a href="Javascript:void(0)"><i class="fa fa-facebook-f"></i></a>
                     </li>

@@ -36,15 +36,16 @@ class DesainController extends Controller
         if( isset( $req['id_kategori'] ) && $req['id_kategori'] > 0){
             $data = $data->where('id_kategori', $req['id_kategori']);
         }
-        if(isset( $req['cari'])){
+        if(isset( $req['cari']) && $req['cari'] !=""){
             $data = $data->whereraw(" namaproduk REGEXP '$q' ");
         }
         $data = $data->paginate(100);
+        $kategori = DB::table('kategoriproduk_m')->where('aktif', true)->get();
 
         // $data = Desain::where('aktif', true)->paginate(1);
-        $data = Desain::where('aktif', true)->get();
+        // $data = Desain::where('aktif', true)->get();
         // return $data;
-        return view('admin/desain_produk/listproduk', compact("data"));
+        return view('admin/desain_produk/listproduk', compact("data","kategori"));
     }
     public function BuatDesain(Request $req)
     {
