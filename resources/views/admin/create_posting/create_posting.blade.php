@@ -33,9 +33,9 @@
                             <div class="form-group">
                                 <label> Kategori Produk </label>
                                 <select class="form-select form-select-lg form-control form-control-lg">
-                                    <option>Dapur</option>
-                                    <option>Teras</option>
-                                    <option>Kantor</option>
+                                    @foreach ($kategori as $item)
+                                        <option value="{{ $item->id }}">{{ $item->kategori }}</option>
+                                    @endforeach
                                     <br>
                                 </select>
 

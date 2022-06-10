@@ -6,7 +6,7 @@
     <div class="col-md-12 gradien1">
         <br />
         <div class="col-md-12">
-            <form action="/post-desain-baru?id_desain={{ request()->get('id_desain') }}" method="post"
+            <form action="/post-desain-baru?id_post={{ request()->get('id_post') }}" method="post"
                 data-toggle="validator" role="form" enctype="multipart/form-data">
                 @csrf
 
@@ -27,15 +27,18 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label> Nama Produk </label>
-                                <input name="namaproduk" value="{{ $edit ? $edit->long_title : '' }}" 
-                                    type="text" class="form-control form-control-lg" required autocomplete="off">
+                                <input name="namaproduk" value="{{ $edit ? $edit->namaproduk : '' }}" type="text"
+                                    class="form-control form-control-lg" required autocomplete="off">
                             </div>
                             <div class="form-group">
                                 <label> Kategori Produk </label>
                                 <select class="form-select form-select-lg form-control form-control-lg" name="kategori">
-                                    <option>Dapur</option>
-                                    <option>Teras</option>
-                                    <option>Kantor</option>
+                                    @foreach ($kategori as $item)
+                                        <option value="{{ $item->id }}"
+                                            @if ($edit) @if ($item->id == $edit->id_kategori) selected @endif
+                                            @endif
+                                            >{{ $item->kategori }}</option>
+                                    @endforeach
                                     <br>
                                 </select>
 
@@ -52,9 +55,11 @@
                                     <input class="alert alert-warning" type="file" id="formFile" name="image"
                                         onchange="preview()">
                                 </div>
-                                <img id="frame" src={{ $edit ? "post/upload/$edit->image" : '' }}
-                                    class="img-fluid img-thumbnail" />
-                                <br /><br />
+                                <p style="width: 50%">
+                                    <img id="frame" src={{ $edit ? "post/upload/$edit->gambar" : '' }}
+                                        class="img-fluid img-thumbnail w-100" />
+                                    <br /><br />
+                                </p>
                             </div>
 
 
@@ -69,7 +74,7 @@
                                     <div class="tab-content">
                                         <div class="tab-pane active" id="tab_1">
                                             <textarea name="body_desain" required id="postinger" class="form-control" style="height: 100vh;">
-                                            {{ $edit ? $edit->body : '' }}
+                                            {{ $edit ? $edit->body_desain : '' }}
                                         </textarea>
                                         </div>
                                     </div>
@@ -115,12 +120,12 @@
             forced_root_block: 'div',
             tabfocus_elements: ':prev,:next',
             plugins: [
-                "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+                "advlist autolink lists link  charmap print preview hr anchor pagebreak",
                 "searchreplace wordcount visualblocks visualchars code fullscreen",
                 "insertdatetime media nonbreaking save table contextmenu directionality",
                 "emoticons template paste textcolor colorpicker textpattern"
             ],
-            toolbar: "insertfile undo redo | image | fontselect fontsizeselect | styleselect | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent",
+            toolbar: "insertfile undo redo | fontselect fontsizeselect | styleselect | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent",
             relative_urls: false,
             file_browser_callback: function(field_name, url, type, win) {
                 var x = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName(

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\admin\Desain;
 use App\Models\admin\Posting;
 use App\Models\Karyawan;
 use Illuminate\Http\Request;
@@ -15,27 +16,24 @@ class HomeController extends Controller
     public function home(Request $req)
     {
 
-        $lastpost = Posting::where('aktif', true)
-            ->orderBy("created_at", "desc")
-            ->take(2)
-            ->get();
+        $desain = Desain::where('aktif', true)->orderby('view', 'desc')->paginate(12);
+        $profil = DB::table('company_m')->where('aktif', true)->first();
 
-        $company = DB::table('company_m')
-            ->where('aktif', true)
-            ->first();
-        $alwaysshow = Posting::where('aktif', true)
-            ->where('always', true)
-            ->orderBy("created_at", "desc")
-            ->take(3)
-            ->get();
 
-        $karyawan = Karyawan::where('aktif', true)
-            ->get();
 
-        return view(
-            'index',
-            compact("lastpost", "alwaysshow", "company", "karyawan")
-        );
+        // $company = DB::table('company_m')
+        //     ->where('aktif', true)
+        //     ->first();
+        // $alwaysshow = Posting::where('aktif', true)
+        //     ->where('always', true)
+        //     ->orderBy("created_at", "desc")
+        //     ->take(3)
+        //     ->get();
+
+        // $karyawan = Karyawan::where('aktif', true)
+        //     ->get();
+
+        return view('index', compact("desain","profil"));
 
         //code...
 

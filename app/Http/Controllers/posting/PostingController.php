@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\admin\Desain;
 use App\Models\admin\Posting;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use RealRashid\SweetAlert\Facades\Alert;
 
@@ -13,15 +14,29 @@ class PostingController extends Controller
 {
     public function riwayatPosting(Request $req)
     {
-        $data = Posting::where('aktif', true)->paginate(12);
+        $data = Posting::where('aktif', true)->paginate(100);
         return view('post/riwayat_berita', compact("data"));
     }
  
     public function cariProduk(Request $req)
     {
 
-        $data = Desain::where('aktif', true)->paginate(12);
-        return view('pages/produk/cariproduk', compact("data"));
+        $cari = explode (" ", $req['cari']);
+        $q = "";
+        
+        // if( $cari->count == 0 )
+        foreach ($cari as $value) {
+            $q =$q. $value. '|';
+        }
+        $data = Desain::where('aktif', true);
+        if( isset( $req['id_kategori'] ) && $req['id_kategori'] > 0){
+            $data = $data->where('id_kategori', $req['id_kategori']);
+        }
+        $data = $data->whereraw(" namaproduk REGEXP '$cari[0]' ")->paginate(100);
+        // return $q;
+
+        $kategori = DB::table('kategoriproduk_m')->where('aktif', true)->get();
+        return view('pages/produk/cariproduk', compact("data","kategori"));
     }
  
     public function dataPosting(Request $req)

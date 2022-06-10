@@ -18,7 +18,7 @@
                         <span class="mr-3"><i class="fa fa-comments text-primary"></i> 0</span>
                     </div>
                 </div>
-                <img class="card-img-top" src="post/upload/{{ $single->image }}" alt="">
+                <img class="card-img-top" src="post/upload/{{ $single->image }}" alt="" style="width: 80%">
                 <br /><br />
                 <div>
                     {!! html_entity_decode($single->body) !!}

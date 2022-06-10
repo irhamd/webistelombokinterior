@@ -11,7 +11,8 @@
                         Jln. Banda No. 9 Mataram <br> Gunungsari NTB
                     </li>
                     <li>
-                        <a href="Javascript:void(0)"><img src="icon/2.png" alt="#" /> &nbsp; <img src="icon/whatsapp.png" alt="#" /></a>(+62)
+                        <a href="Javascript:void(0)"><img src="icon/2.png" alt="#" /> &nbsp; <img src="icon/whatsapp.png"
+                                alt="#" /></a>(+62)
                         813-3188-0750 &nbsp; <b class="text text-warning"> (Yuda) </b>
                     </li>
                 </ul>
@@ -23,8 +24,8 @@
             <div class="row">
                 <div class="col-md-12 position-static fixed-top">
                     <h2>Lombok Interior</h2>
-                    <form class="news">
-                        <input class="newslatter" placeholder="Cari produk ..." type="text" name=" Enter Your Email">
+                    <form class="news" id="cari-form">
+                        <input class="newslatter" placeholder="Cari produk ..." type="text" name="cari">
                         <button class="submit">Cari</button>
                     </form>
                 </div>
@@ -47,7 +48,8 @@
                                     </li>
                                     <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Perkantoran </a>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Kamar Tidur</a> </li>
+                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Kamar Tidur</a>
+                                    </li>
                                     <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Ruang
                                             Kerja </a> </li>
                                 </ul>
@@ -73,6 +75,16 @@
             </div>
         </div>
 
+        <div class="viewport">
+            <ul class="list">
+
+                @foreach ($kategori as $item)
+                    <li class="item"> <a href="/cari-produk?id_kategori={{ $item->id }}">
+                            {{ $item->kategori }} </a> </li>
+                @endforeach
+
+            </ul>
+        </div>
     </div>
 
     <div id="client" class="clients">
@@ -91,7 +103,7 @@
                     <div class="col-md-6">
                         <div class="clients_img" style="border-radius: 4px">
                             <a href="/detailproduk?post_desain={{ $item->id }}">
-                                <img class="gambar"    src="/post/upload/{{ $item->gambar }}" style="width: 100%;">
+                                <img class="gambar" src="/post/upload/{{ $item->gambar }}" style="width: 100%;">
                             </a>
                             <ul class="sociel1">
                                 <li> <a href="Javascript:void(0)"><i class="fa fa-eye" style="color: grey">
@@ -126,9 +138,18 @@
                 @endforeach
 
 
+
             </div>
         </div>
     </div>
+
+    <p class="text-center">
+        @if ($data->count() == 0)
+            <center class="alert alert-danger">
+                <h1> Produk / desain tidak ditemukan ! </h1>
+            </center>
+        @endif
+    </p>
 
     <div class="copyright">
         <div class="container">

@@ -811,6 +811,7 @@ ul.retail li a:hover {
     width: 240px;
     background-repeat: no-repeat;
     top: 0px;
+    bottom: 80px;
     background-color: #f5f5f594;
     padding: 5px;
     height: 100px;
@@ -822,8 +823,8 @@ ul.retail li a:hover {
     background: url(../images/logo1.png);
     width: 240px;
     background-repeat: no-repeat;
-    bottom: 0px;
-    right: 10px;
+    bottom: 10px;
+    left: 40%;
     /* background-color: #f5f5f594; */
     padding: 5px;
     height: 100px;

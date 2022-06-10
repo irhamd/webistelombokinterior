@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\admin\Desain;
 use App\Models\admin\Posting;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
 class AdminController extends Controller
@@ -17,7 +18,9 @@ class AdminController extends Controller
         if (isset($query)) {
             $edit = Posting::find($req->query('id_post'));
         }
-        return view('admin/create_posting/create_posting', compact("edit"));
+        $kategori = DB::table('kategoriproduk_m')->where('aktif', true)->get();
+
+        return view('admin/create_posting/create_posting', compact("edit", "kategori"));
     }
 }
 

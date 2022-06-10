@@ -9,23 +9,44 @@
     <div class="container">
         <br>
         <div class="row">
-            <div class=" col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class=" col-xl-4 col-lg-4 col-md-4 col-sm-12" style="justify-content: center">
                 <div class="titlepage">
                     <h2> <span class="black_bg">Detail </span> Desain</h2>
                 </div>
             </div>
-            <div class=" col-xl-8 col-lg-8 col-md-8 col-sm-12">
+            {{-- <div class=" col-xl-8 col-lg-8 col-md-8 col-sm-12">
                 <ul class="retail">
                     <li><a href="Javascript:void(0)">RESIDENTAL</a></li>
                     <li><a href="Javascript:void(0)">RETAIL DESIGN</a></li>
                     <li><a href="Javascript:void(0)">SPACE ADAPTATION</a></li>
                 </ul>
+            </div> --}}
+        </div>
+
+        <div class="fixed-bottom">
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 alert bg-dark">
+                <div class="address">
+                    <h3 class="text text-warning">Hubungi Kami </h3>
+                    <ul class="loca">
+                        <li style="display:  flex">
+                            <a href="Javascript:void(0)"><img src="icon/loc.png" alt="#" />
+                            </a>
+                            Jln. Banda No. 9 Mataram <br> Gunungsari NTB
+                        </li>
+                        <li>
+                            <a href="Javascript:void(0)"><img src="icon/2.png" alt="#" /> &nbsp; <img
+                                    src="icon/whatsapp.png" alt="#" /></a>(+62)
+                            813-3188-0750 &nbsp; <b class="text text-warning"> (Yuda) </b>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="service_img">
-                    <figure><img class="image-border h-100" src="/post/upload/{{ $single->gambar }}"></figure>
+                <div class="service_img" style="justify-content: center; text-align: center">
+                    <figure><img style="width: 80%" class="image-border" src="/post/upload/{{ $single->gambar }}">
+                    </figure>
                     <p class="dalam"> </p>
                     <br>
                 </div>
@@ -92,7 +113,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                {{-- <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
                     <form id=" color_chang" class="main_form">
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -112,8 +133,8 @@
                             </div>
                         </div>
                     </form>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                </div> --}}
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                     <div class="map_section">
                         <div id="map">
                         </div>

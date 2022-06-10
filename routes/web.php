@@ -33,6 +33,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('/buat-desain-baru', [DesainController::class, 'BuatDesain']);
         Route::post('/post-desain-baru', [DesainController::class, 'postDesainBaru']);
         Route::get('/list-desain', [DesainController::class, 'listDesain']);
+        Route::get('/hapus-desain', [DesainController::class, 'hapusProduk']);
     // });
 });
 
