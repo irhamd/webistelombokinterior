@@ -13,6 +13,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="google-site-verification" content="jysb3wEXnNSjuEelE0URMzg7O6Z4IUv7sWPpDuRdB3s" />
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- style css -->

@@ -5,7 +5,7 @@
             <div class="address">
                 <h3 class="text text-warning">Hubungi Kami </h3>
                 <ul class="loca">
-                    <li style="display:  flex">
+                    <li class="hide-mobile" style="display:  flex">
                         <a href="Javascript:void(0)"><img src="icon/loc.png" alt="#" />
                         </a>
                         Jln. Banda No. 9 Mataram <br> Gunungsari NTB
@@ -24,7 +24,8 @@
                 <div class="col-md-12 position-static fixed-top">
                     <h2>Lombok Interior</h2>
                     <form class="news" id="cari-form">
-                        <input class="newslatter" placeholder="Cari produk ..." type="text" name="cari" value="{{ request()->get('cari') }}">
+                        <input class="newslatter" placeholder="Cari produk ..." type="text" name="cari"
+                            value="{{ request()->get('cari') }}">
                         <button class="submit">Cari</button>
                     </form>
                 </div>
@@ -73,21 +74,22 @@
                         </div>
                     </div>
                 </div>
+                <div class="viewport" style="padding: 0 10px">
+                    <ul class="list">
+
+                        @foreach ($kategori as $item)
+                            <a href="/cari-produk?id_kategori={{ $item->id }}">
+                                <li class="item" style="margin-right: 5px">
+                                    {{ $item->kategori }} </li>
+                            </a>
+                        @endforeach
+
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <div class="viewport">
-            <ul class="list">
 
-                @foreach ($kategori as $item)
-                    <a href="/cari-produk?id_kategori={{ $item->id }}">
-                        <li class="item" style="margin-right: 5px">
-                            {{ $item->kategori }} </li>
-                    </a>
-                @endforeach
-
-            </ul>
-        </div>
     </div>
 
     <div id="client" class="clients">

@@ -42,11 +42,20 @@
 }
 
 
-@media only screen and (max-device-width: 640px) {
-  .pelayanan {
-    display: none;
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .hide-mobile {
+    /* display: none; */
   }
 }
+
+ 
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {}
+
 
 
 .float1 {
@@ -264,7 +273,7 @@ a:hover {
 }
 
 .item {
-  height: 74px;
+  height: 54px;
   width: 164px;
   flex-shrink: 0;
 }
@@ -320,7 +329,7 @@ a:hover {
   box-shadow: 0 2px 1px rgba(0, 0, 0, 1);
 }
 
-.item:hover{
+.item:hover {
   background-color: yellow;
   color: black;
   font-weight: bold;
@@ -351,7 +360,5 @@ a:hover {
   /* width: calc(100% - 20px); */
   margin-left: 10px;
   margin-right: 10px;
-  width:  100%;
+  width: 100%;
 }
-
- 

@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Route;
 
 
 // 
-Route::group(['middleware' => ['cekmaintenance']], function () {
+// Route::group(['middleware' => ['']], function () {
     Route::get('/', [HomeController::class, 'home']);
     Route::get('/home', [HomeController::class, 'home'])->name('home');
     Route::get('/posting', [PostingController::class, 'riwayatPosting']);
@@ -20,7 +20,7 @@ Route::group(['middleware' => ['cekmaintenance']], function () {
     Route::get('/cari-produk', [PostingController::class, 'cariProduk']);
     Route::get('/detailproduk', [ProdukController::class, 'detailProduk']);
 
-});
+// });
 
 Route::group(['middleware' => ['auth']], function () {
 // Route::group([], function () {
