@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Route;
     Route::get('/profil', [PostingController::class, 'profil']);
     Route::get('/cari-produk', [PostingController::class, 'cariProduk']);
     Route::get('/detailproduk', [ProdukController::class, 'detailProduk']);
+    Route::get('/profil', [ProdukController::class, 'profil']);
+
 
 // });
 

@@ -7,6 +7,7 @@
         <ul class="list-unstyled components">
             <li class="active"> <a href="/"> <i class="fa fa-home"></i> &nbsp;Beranda </a></li>
             <li> <a href="/cari-produk"> <i class="fa fa-cube"></i> &nbsp;Desain</a></li>
+            <li> <a href="/profil"> <i class="fa fa-cube"></i> &nbsp;Profil</a></li>
             <li> <a href="#service"> <i class="fa fa-puzzle-piece"></i> &nbsp;Service</a></li>
             <li> <a href="#contact"> <i class="fa fa-volume-control-phone"></i> &nbsp; Hubungi Kami</a></li>
             <hr>
