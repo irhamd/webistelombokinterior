@@ -41,6 +41,14 @@ class ProdukController extends Controller
         // }
     }
 
+
+    public function profil(Request $req)
+    {
+        $profil = DB::table('company_m')->where('aktif', true)->first();
+     
+        return view('pages/single/profil', compact("profil"));
+          
+    }
   
 }
 

@@ -18,6 +18,10 @@
                     <div class="right_header_info">
                         <ul>
                             <li class="d_none">
+                                <a href="/profil"><img style="margin-right: 15px;" src="icon/profil.png" alt="#" />
+                                    Profil </a>
+                            </li>
+                            <li class="d_none">
                                 <a href="/cari-produk"><img style="margin-right: 15px;" src="icon/1.png" alt="#" />
                                     Desain Interior </a>
                             </li>

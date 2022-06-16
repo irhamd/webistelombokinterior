@@ -5,11 +5,7 @@
             <div class="address">
                 <h3 class="text text-warning">Hubungi Kami </h3>
                 <ul class="loca">
-                    <li style="display:  flex">
-                        <a href="Javascript:void(0)"><img src="icon/loc.png" alt="#" />
-                        </a>
-                        Jln. Banda No. 9 Mataram <br> Gunungsari NTB
-                    </li>
+                    
                     <li>
                         <a href="Javascript:void(0)"><img src="icon/2.png" alt="#" /> &nbsp; <img src="icon/whatsapp.png"
                                 alt="#" /></a>(+62) 813-3188-0750 &nbsp; <b class="text text-warning"> (Yuda) </b>
