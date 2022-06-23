@@ -19,7 +19,7 @@
                                     <div class="text-bg">
                                         <h1><strong class="black_bold"> LOMBOK </strong></h1>
                                         <h1 style="margin-top: -30px">INTERIOR</h1>
-                                        <p>Penyedia pelayanan terbesar di NTB </p>
+                                        <p>ILO merupakan perusahaan yang bergerak dalam bidang desain dan produksi interior dan eksterior di Kota Mataram. Didirikan tahun 2016, ILO telah berpengalaman menangani berbagai kebutuhan interior dan eksterior klien, dengan teknisi dan sumber daya manusia yang berpengalaman di bidangnya. </p>
                                         <a class="read_more" href="/cari-produk">Lihat Lebih</a> <a
                                             class="read_more" href="Javascript:void(0)">About</a>
                                     </div>
@@ -38,10 +38,7 @@
                                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                                         <div class="img_box">
                                                             <h3>Desain Interior Terbaik </h3>
-                                                            <p>Ada banyak variasi bagian Lorem Ipsum yang
-                                                                tersedia, tetapi sebagian besar telah mengalami
-                                                                perubahan dalam beberapa bentuk, sesuai dengan
-                                                                kebutuhan anda
+                                                            <p>Berawal dari sebuah usaha dalam lingkup kecil, yang mempunyai pengalaman dalam bidang pembangunan dan pabrikasi furniture, sekarang ILO berkembang menjadi sebuah perusahaan yang bergerak di bidang interior desain, arsitektur, kontraktor produk interior dan furniture untuk hotel, bungalow, rumah hunian, apartemen, kantor, ruko, restoran, serta pabrik.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -71,7 +68,7 @@
                                             </strong></h1>
                                         <h1 style="margin-top: -30px; color: goldenrod">INTERIOR</h1>
 
-                                        <p>Lombok Interior adalah apa bebass </p>
+                                        <p>Inovasi dan inspirasi selalu menjadi penyemangat dalam menjalankan semua proyek. ILO berusaha memberikan pelayanan produk yang premium bagi klien. </p>
                                         <a class="read_more" href="#">Desain Kami</a> <a class="read_more"
                                             href="Javascript:void(0)">About</a>
                                     </div>
@@ -212,14 +209,8 @@
                     <div class="row d_flex">
                         <div class="col-md-6">
                             <div class="designs_text">
-                                <h3>Kichan Design</h3>
-                                <p>It is a long established fact that a reader will be distracted by the
-                                    readable content of a page when looking at its layout. The point of using
-                                    Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-                                    opposed to using 'Content here, content here', making it look like readable
-                                    English. Many desktop publishing packages and web page editors now use Lorem
-                                    Ipsum as their default model text, and a search for 'lorem ipsum' will
-                                    uncover many web sites st</p>
+                                <h3>Ruang Tamu Minimalis</h3>
+                                <p>ILOvers, ada beberapa hal penting yang perlu diperhatikan saat membuat desain ruang tamu minimalis. Agar dapat memberi kesan lega dan lebih luas, maka ruang tamu ILOvers bisa dibuat menyatu dengan ruang keluarga. Dengan begitu, desainnya adalah open space (ruang terbuka) tanpa dinding yang membuatnya menjadi satu kesatuan ruang. Pilih kursi sofa ruang tamu dan meja yang juga bergaya minimalis. Yakni yang lebih menonjolkan pada fungsi tanpa ornamen estetis yang terlalu banyak sehingga membuat kesan terlalu ramai. Pilih model yang sederhana, rapi, dan berkesan modern.</p>
                                 <a class="read_more" href="/cari-produk">Lihat Lebih</a>
                             </div>
                         </div>
