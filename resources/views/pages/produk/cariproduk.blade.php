@@ -7,8 +7,8 @@
                 <ul class="loca">
                     
                     <li>
-                        <a href="Javascript:void(0)"><img src="icon/2.png" alt="#" /> &nbsp; <img src="icon/whatsapp.png"
-                                alt="#" /></a>(+62) 813-3188-0750 &nbsp; <b class="text text-warning"> (Yuda) </b>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B6281331880750&text&app_absent=0" target="_blank"><img src="icon/2.png" alt="#" /> &nbsp; <img src="icon/whatsapp.png"
+                                alt="#" />&nbsp; {{ $profil->nowa }} &nbsp; <b class="text text-warning"> (Yuda) </b> </a>
                     </li>
                 </ul>
             </div>
@@ -62,8 +62,7 @@
                                         Jln. Banda No. 9 Mataram <br> Gunungsari NTB
                                     </li>
                                     <li>
-                                        <a href="Javascript:void(0)"><img src="icon/2.png" alt="#" /></a>(+62)
-                                        813-3188-0750
+                                        <a href="Javascript:void(0)"><img src="icon/2.png" alt="#" /></a> {{ $profil->nowa }}
                                     </li>
                                 </ul>
                             </div>

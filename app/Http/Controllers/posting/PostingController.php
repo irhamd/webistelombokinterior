@@ -39,9 +39,10 @@ class PostingController extends Controller
         }
         $data = $data->paginate(100);
         // return $q;
+        $profil = DB::table('company_m')->where('aktif', true)->first();
 
         $kategori = DB::table('kategoriproduk_m')->where('aktif', true)->get();
-        return view('pages/produk/cariproduk', compact("data","kategori"));
+        return view('pages/produk/cariproduk', compact("data","kategori","profil"));
     }
  
     public function dataPosting(Request $req)

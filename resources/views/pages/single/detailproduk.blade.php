@@ -28,11 +28,10 @@
                 <div class="address">
                     <h3 class="text text-warning">Hubungi Kami </h3>
                     <ul class="loca">
-                        
                         <li>
-                            <a href="Javascript:void(0)"><img src="icon/2.png" alt="#" /> &nbsp; <img
-                                    src="icon/whatsapp.png" alt="#" /></a>(+62)
-                            813-3188-0750 &nbsp; <b class="text text-warning"> (Yuda) </b>
+                            <a href="https://api.whatsapp.com/send/?phone=%2B6281331880750&text&app_absent=0"
+                                target="_blank"><img src="icon/2.png" alt="#" /> &nbsp; <img src="icon/whatsapp.png"
+                                    alt="#" /> {{ $profil->nowa }} &nbsp; <b class="text text-warning"> (Yuda) </b> </a>
                         </li>
                     </ul>
                 </div>
@@ -41,7 +40,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="service_img" style="justify-content: center; text-align: center">
-                    <figure><img style="width: 80%" class="image-border" src="/post/upload/{{ $single->gambar }}">
+                    <figure><img style="width: 90%" class="image-border" src="/post/upload/{{ $single->gambar }}">
                     </figure>
                     <p class="dalam"> </p>
                     <br>

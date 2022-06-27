@@ -732,7 +732,7 @@ ul.retail li a:hover {
 
 .service_box h3 {
     font-size: 20px;
-    line-height: 15px;
+    line-height: 25px;
     font-weight: 700;
     color: goldenrod;
 }
@@ -808,7 +808,7 @@ ul.retail li a:hover {
 .clients_img .dalam{
     position: absolute;
     background: url(../images/logo1.png);
-    width: 240px;
+    width: 100%;
     background-repeat: no-repeat;
     top: 0px;
     bottom: 80px;
@@ -821,7 +821,7 @@ ul.retail li a:hover {
 .service_img .dalam{
     position: absolute;
     background: url(../images/logo1.png);
-    width: 240px;
+    width: 100%;
     background-repeat: no-repeat;
     bottom: 10px;
     left: 40%;
