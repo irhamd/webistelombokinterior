@@ -19,7 +19,8 @@
                                     <div class="text-bg">
                                         <h1><strong class="black_bold"> LOMBOK </strong></h1>
                                         <h1 style="margin-top: -30px">INTERIOR</h1>
-                                        <p>ILO merupakan perusahaan yang bergerak dalam bidang desain dan produksi interior dan eksterior di Kota Mataram. Didirikan tahun 2016, ILO telah berpengalaman menangani berbagai kebutuhan interior dan eksterior klien, dengan teknisi dan sumber daya manusia yang berpengalaman di bidangnya. </p>
+                                        <p>ILO merupakan perusahaan yang bergerak dalam bidang desain dan produksi interior dan eksterior di Kota Mataram. Didirikan tahun 2016, ILO telah berpengalaman menangani berbagai kebutuhan interior dan eksterior klien, dengan teknisi dan sumber daya manusia yang berpengalaman di bidangnya.
+                                         </p>
                                         <a class="read_more" href="/cari-produk">Lihat Lebih</a> <a
                                             class="read_more" href="Javascript:void(0)">About</a>
                                     </div>
@@ -38,7 +39,7 @@
                                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                                         <div class="img_box">
                                                             <h3>Desain Interior Terbaik </h3>
-                                                            <p>Berawal dari sebuah usaha dalam lingkup kecil, yang mempunyai pengalaman dalam bidang pembangunan dan pabrikasi furniture, sekarang ILO berkembang menjadi sebuah perusahaan yang bergerak di bidang interior desain, arsitektur, kontraktor produk interior dan furniture untuk hotel, bungalow, rumah hunian, apartemen, kantor, ruko, restoran, serta pabrik.
+                                                            <p>Telah banyak jenis produk interior yang tim ILO kerjakan, diantaranya plafon, panel dinding, kertas dinding, gorden, lantai, mebel, dan sofa.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -68,7 +69,7 @@
                                             </strong></h1>
                                         <h1 style="margin-top: -30px; color: goldenrod">INTERIOR</h1>
 
-                                        <p>Inovasi dan inspirasi selalu menjadi penyemangat dalam menjalankan semua proyek. ILO berusaha memberikan pelayanan produk yang premium bagi klien. </p>
+                                        <p>Berawal dari sebuah usaha dalam lingkup kecil, yang mempunyai pengalaman dalam bidang pembangunan dan pabrikasi furniture, sekarang ILO berkembang menjadi sebuah perusahaan yang bergerak di bidang interior desain, arsitektur, kontraktor produk interior dan furniture untuk hotel, bungalow, rumah hunian, apartemen, kantor, ruko, restoran, serta pabrik. </p>
                                         <a class="read_more" href="#">Desain Kami</a> <a class="read_more"
                                             href="Javascript:void(0)">About</a>
                                     </div>
@@ -86,10 +87,7 @@
                                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                                         <div class="img_box">
                                                             <h3>Best INTERIOR Design </h3>
-                                                            <p>There are many variations of passages of
-                                                                Lorem Ipsum available, but the majority
-                                                                have suffered alteration in some
-                                                                form, by injected humour,
+                                                            <p>Telah banyak jenis produk interior yang tim ILO kerjakan, diantaranya plafon, panel dinding, kertas dinding, gorden, lantai, mebel, dan sofa.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -116,9 +114,7 @@
                                     <div class="text-bg">
                                         <h1><strong class="black_bold"> LOMBOK </strong></h1>
                                         <h1 style="margin-top: -30px">INTERIOR</h1>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but
-                                            the majority have suffered alteration in some form, by injected
-                                            humour, </p>
+                                        <p>Inovasi dan inspirasi selalu menjadi penyemangat dalam menjalankan semua proyek. ILO berusaha memberikan pelayanan produk yang premium bagi klien.</p>
                                         <a class="read_more" href="#">Desain Kami</a> <a class="read_more"
                                             href="Javascript:void(0)">About</a>
                                     </div>
@@ -137,10 +133,7 @@
                                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                                         <div class="img_box">
                                                             <h3>Best INTERIOR Design </h3>
-                                                            <p>There are many variations of passages of
-                                                                Lorem Ipsum available, but the majority
-                                                                have suffered alteration in some
-                                                                form, by injected humour,
+                                                            <p>Telah banyak jenis produk interior yang tim ILO kerjakan, diantaranya plafon, panel dinding, kertas dinding, gorden, lantai, mebel, dan sofa.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -178,8 +171,7 @@
                 <div class="col-md-12">
                     <div class="titlepage">
                         <h2> <span class="black_bg">Desain </span> Kami</h2>
-                        <p>It is a long established fact that a reader will be distracted by the readable
-                            content </p>
+                        <p>Desain yang kami rancang disesuaikan dengan kebutuhan klien ILO. </p>
                     </div>
                 </div>
             </div>
@@ -255,10 +247,7 @@
                 <div class="col-md-5">
                     <div class="service_box">
                         <h3>Design</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable
-                            content of a page when looking at its layout. The point of using Lorem Ipsum is that
-                            it has a more-or-less normal distribution of letters, as opposed to using 'Content
-                            here, content here', making it look</p>
+                        <p>Kebutuhan klien ILO adalah prioritas kami. Oleh karenanya, faktor komunikasi dengan klien adalah hal yang fundamental dalam setiap pekerjaan yang kami lakukan. Setiap klien ILO akan mendapatkan desain 3D sebelum proses pengerjaan oleh tim teknis. Bila desain tersebut sudah disetujui klien dan telah ditandatanganinya kontrak kerja, pekerjaan segera dieksekusi. Bila belum disetujui, dilakukan revisi sesuai kebutuhan klien terkait hal-hal apa saja yang masih perlu diubah, ditambahkan, atau dikurangi.</p>
                         <a class="read_more" href="/cari-produk">Lihat Lebih</a>
                     </div>
                 </div>
@@ -286,15 +275,17 @@
                 <div class="col-md-6">
                     <div class="clients_img">
                         <i><img src="images/icon.png" alt="#" /></i>
-                        <p>It is a long established fact that a reader will bQe distracted by the readable
-                            content of a page when looking at its of Lorem Ipsum as their default mo</p>
+                        <p>Perkejaan tim ILO sangat rapi. Sesuai dengan kebutuhan saya dan istri. Finishing-nya pun sangat mulus. Tidak banyak tukang interior yang menguasai teknik finishing seperti yang dikerjakan tim ILO.
+                        </p>
+                        <p></p> ~Bpk. Nanang - Terong Tawah (Lombok Barat)
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="clients_img padding_top0">
                         <i><img src="images/icon.png" alt="#" /></i>
-                        <p>It is a long established fact that a reader will bQe distracted by the readable
-                            content of a page when looking at its of Lorem Ipsum as their default mo</p>
+                        <p>Saya puas dengan pekerjaan tim ILO. Harganya standard, tapi kualitasnya hasil pekerjaannya premium. Sukses terus untuk semua tim ILO.
+                        </p>
+                        <p></p>~Bpk. Rudy - Nusa Dua (Bali)
                     </div>
                 </div>
             </div>

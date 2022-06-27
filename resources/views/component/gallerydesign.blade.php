@@ -4,8 +4,7 @@
         <div class="titlepage">
             <h2> <span class="black_bg">Galery </span> Desain</h2>
             <br>
-            <p>It is a long established fact that a reader will be distracted by the readable
-                content </p>
+            <p>Berikut adalah koleksi design-design ILO </p>
         </div>
         <article class="flow">
             <div class="team">
