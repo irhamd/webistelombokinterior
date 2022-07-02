@@ -19,7 +19,7 @@
                                     <div class="text-bg">
                                         <h1><strong class="black_bold"> LOMBOK </strong></h1>
                                         <h1 style="margin-top: -30px">INTERIOR</h1>
-                                        <p>ILO merupakan perusahaan yang bergerak dalam bidang desain dan produksi interior dan eksterior di Kota Mataram. Didirikan tahun 2016, ILO telah berpengalaman menangani berbagai kebutuhan interior dan eksterior klien, dengan teknisi dan sumber daya manusia yang berpengalaman di bidangnya.
+                                        <p class="text-justify">ILO merupakan perusahaan yang bergerak dalam bidang desain dan produksi interior dan eksterior di Kota Mataram. Didirikan tahun 2016, ILO telah berpengalaman menangani berbagai kebutuhan interior dan eksterior klien, dengan teknisi dan sumber daya manusia yang berpengalaman di bidangnya.
                                          </p>
                                         <a class="read_more" href="/cari-produk">Lihat Lebih</a> <a
                                             class="read_more" href="Javascript:void(0)">About</a>
@@ -39,7 +39,7 @@
                                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                                         <div class="img_box">
                                                             <h3>Desain Interior Terbaik </h3>
-                                                            <p>Telah banyak jenis produk interior yang tim ILO kerjakan, diantaranya plafon, panel dinding, kertas dinding, gorden, lantai, mebel, dan sofa.
+                                                            <p  class="text-justify">Telah banyak jenis produk interior yang tim ILO kerjakan, diantaranya plafon, panel dinding, kertas dinding, gorden, lantai, mebel, dan sofa.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -69,8 +69,8 @@
                                             </strong></h1>
                                         <h1 style="margin-top: -30px; color: goldenrod">INTERIOR</h1>
 
-                                        <p>Berawal dari sebuah usaha dalam lingkup kecil, yang mempunyai pengalaman dalam bidang pembangunan dan pabrikasi furniture, sekarang ILO berkembang menjadi sebuah perusahaan yang bergerak di bidang interior desain, arsitektur, kontraktor produk interior dan furniture untuk hotel, bungalow, rumah hunian, apartemen, kantor, ruko, restoran, serta pabrik. </p>
-                                        <a class="read_more" href="#">Desain Kami</a> <a class="read_more"
+                                        <p  class="text-justify">Berawal dari sebuah usaha dalam lingkup kecil, yang mempunyai pengalaman dalam bidang pembangunan dan pabrikasi furniture, sekarang ILO berkembang menjadi sebuah perusahaan yang bergerak di bidang interior desain, arsitektur, kontraktor produk interior dan furniture untuk hotel, bungalow, rumah hunian, apartemen, kantor, ruko, restoran, serta pabrik. </p>
+                                        <a class="read_more" href="/cari-produk">Desain Kami</a> <a class="read_more"
                                             href="Javascript:void(0)">About</a>
                                     </div>
                                 </div>
@@ -87,7 +87,7 @@
                                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                                         <div class="img_box">
                                                             <h3>Best INTERIOR Design </h3>
-                                                            <p>Telah banyak jenis produk interior yang tim ILO kerjakan, diantaranya plafon, panel dinding, kertas dinding, gorden, lantai, mebel, dan sofa.
+                                                            <p  class="text-justify">Telah banyak jenis produk interior yang tim ILO kerjakan, diantaranya plafon, panel dinding, kertas dinding, gorden, lantai, mebel, dan sofa.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -114,8 +114,8 @@
                                     <div class="text-bg">
                                         <h1><strong class="black_bold"> LOMBOK </strong></h1>
                                         <h1 style="margin-top: -30px">INTERIOR</h1>
-                                        <p>Inovasi dan inspirasi selalu menjadi penyemangat dalam menjalankan semua proyek. ILO berusaha memberikan pelayanan produk yang premium bagi klien.</p>
-                                        <a class="read_more" href="#">Desain Kami</a> <a class="read_more"
+                                        <p  class="text-justify">Inovasi dan inspirasi selalu menjadi penyemangat dalam menjalankan semua proyek. ILO berusaha memberikan pelayanan produk yang premium bagi klien.</p>
+                                        <a class="read_more" href="/cari-produk">Desain Kami</a> <a class="read_more"
                                             href="Javascript:void(0)">About</a>
                                     </div>
                                 </div>
@@ -133,7 +133,7 @@
                                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                                         <div class="img_box">
                                                             <h3>Best INTERIOR Design </h3>
-                                                            <p>Telah banyak jenis produk interior yang tim ILO kerjakan, diantaranya plafon, panel dinding, kertas dinding, gorden, lantai, mebel, dan sofa.
+                                                            <p  class="text-justify">Telah banyak jenis produk interior yang tim ILO kerjakan, diantaranya plafon, panel dinding, kertas dinding, gorden, lantai, mebel, dan sofa.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -186,7 +186,7 @@
                         <div class="col-md-6">
                             <div class="designs_text padding_top0">
                                 <h3>Kitchen Set Minimalis Dinding Heksagon</h3>
-                                <p>Dengan desain kitchen set minimalis yang cantik dan menawan, siapapun bakal
+                                <p  class="text-justify">Dengan desain kitchen set minimalis yang cantik dan menawan, siapapun bakal
                                     betah berlama-lama di dapur, sekalipun kitchen set minimalis.
                                     Salah satu cara mensiasati supaya kesan dapur tidak terlalu kosong dan
                                     polos, ILOvers bisa mencoba menggunakan dekorasi keramik motif.
@@ -202,7 +202,7 @@
                         <div class="col-md-6">
                             <div class="designs_text">
                                 <h3>Ruang Tamu Minimalis</h3>
-                                <p>ILOvers, ada beberapa hal penting yang perlu diperhatikan saat membuat desain ruang tamu minimalis. Agar dapat memberi kesan lega dan lebih luas, maka ruang tamu ILOvers bisa dibuat menyatu dengan ruang keluarga. Dengan begitu, desainnya adalah open space (ruang terbuka) tanpa dinding yang membuatnya menjadi satu kesatuan ruang. Pilih kursi sofa ruang tamu dan meja yang juga bergaya minimalis. Yakni yang lebih menonjolkan pada fungsi tanpa ornamen estetis yang terlalu banyak sehingga membuat kesan terlalu ramai. Pilih model yang sederhana, rapi, dan berkesan modern.</p>
+                                <p  class="text-justify">ILOvers, ada beberapa hal penting yang perlu diperhatikan saat membuat desain ruang tamu minimalis. Agar dapat memberi kesan lega dan lebih luas, maka ruang tamu ILOvers bisa dibuat menyatu dengan ruang keluarga. Dengan begitu, desainnya adalah open space (ruang terbuka) tanpa dinding yang membuatnya menjadi satu kesatuan ruang. Pilih kursi sofa ruang tamu dan meja yang juga bergaya minimalis. Yakni yang lebih menonjolkan pada fungsi tanpa ornamen estetis yang terlalu banyak sehingga membuat kesan terlalu ramai. Pilih model yang sederhana, rapi, dan berkesan modern.</p>
                                 <a class="read_more" href="/cari-produk">Lihat Lebih</a>
                             </div>
                         </div>
@@ -231,11 +231,7 @@
                     </div>
                 </div>
                 <div class=" col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                    <ul class="retail">
-                        <li><a href="Javascript:void(0)">RESIDENTAL</a></li>
-                        <li><a href="Javascript:void(0)">RETAIL DESIGN</a></li>
-                        <li><a href="Javascript:void(0)">SPACE ADAPTATION</a></li>
-                    </ul>
+                   
                 </div>
             </div>
             <div class="row">
@@ -247,7 +243,7 @@
                 <div class="col-md-5">
                     <div class="service_box">
                         <h3>Design</h3>
-                        <p>Kebutuhan klien ILO adalah prioritas kami. Oleh karenanya, faktor komunikasi dengan klien adalah hal yang fundamental dalam setiap pekerjaan yang kami lakukan. Setiap klien ILO akan mendapatkan desain 3D sebelum proses pengerjaan oleh tim teknis. Bila desain tersebut sudah disetujui klien dan telah ditandatanganinya kontrak kerja, pekerjaan segera dieksekusi. Bila belum disetujui, dilakukan revisi sesuai kebutuhan klien terkait hal-hal apa saja yang masih perlu diubah, ditambahkan, atau dikurangi.</p>
+                        <p  class="text-justify">Kebutuhan klien ILO adalah prioritas kami. Oleh karenanya, faktor komunikasi dengan klien adalah hal yang fundamental dalam setiap pekerjaan yang kami lakukan. Setiap klien ILO akan mendapatkan desain 3D sebelum proses pengerjaan oleh tim teknis. Bila desain tersebut sudah disetujui klien dan telah ditandatanganinya kontrak kerja, pekerjaan segera dieksekusi. Bila belum disetujui, dilakukan revisi sesuai kebutuhan klien terkait hal-hal apa saja yang masih perlu diubah, ditambahkan, atau dikurangi.</p>
                         <a class="read_more" href="/cari-produk">Lihat Lebih</a>
                     </div>
                 </div>
@@ -275,7 +271,7 @@
                 <div class="col-md-6">
                     <div class="clients_img">
                         <i><img src="images/icon.png" alt="#" /></i>
-                        <p>Perkejaan tim ILO sangat rapi. Sesuai dengan kebutuhan saya dan istri. Finishing-nya pun sangat mulus. Tidak banyak tukang interior yang menguasai teknik finishing seperti yang dikerjakan tim ILO.
+                        <p  class="text-justify">Perkejaan tim ILO sangat rapi. Sesuai dengan kebutuhan saya dan istri. Finishing-nya pun sangat mulus. Tidak banyak tukang interior yang menguasai teknik finishing seperti yang dikerjakan tim ILO.
                         </p>
                         <p></p> ~Bpk. Nanang - Terong Tawah (Lombok Barat)
                     </div>
@@ -283,7 +279,7 @@
                 <div class="col-md-6">
                     <div class="clients_img padding_top0">
                         <i><img src="images/icon.png" alt="#" /></i>
-                        <p>Saya puas dengan pekerjaan tim ILO. Harganya standard, tapi kualitasnya hasil pekerjaannya premium. Sukses terus untuk semua tim ILO.
+                        <p  class="text-justify">Saya puas dengan pekerjaan tim ILO. Harganya standard, tapi kualitasnya hasil pekerjaannya premium. Sukses terus untuk semua tim ILO.
                         </p>
                         <p></p>~Bpk. Rudy - Nusa Dua (Bali)
                     </div>
@@ -303,7 +299,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                {{-- <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
                     <form id=" color_chang" class="main_form">
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -323,8 +319,8 @@
                             </div>
                         </div>
                     </form>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                </div> --}}
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                     <div class="map_section">
                         <div id="map">
                         </div>

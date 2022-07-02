@@ -56,6 +56,11 @@
 /* For Mobile Phones Portrait or Landscape View */
 @media screen and (max-device-width: 640px) {}
 
+@media (min-width: 575.98px) {
+  .d_show{
+   display: none;
+  }
+}
 
 
 .float1 {

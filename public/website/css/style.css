@@ -2007,7 +2007,7 @@ pre code {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
-
+ 
   .table-responsive-sm>.table-bordered {
     border: 0;
   }

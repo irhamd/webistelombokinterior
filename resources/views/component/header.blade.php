@@ -5,7 +5,7 @@
     <div class="header">
         <div class="container-fluid" style="background-color:#ffd7002e; border-radius:5px; color: black;">
             <div class="row py-3">
-                <div class="col-lg-3 logo_section">
+                <div class="col-lg-3">
                     <div class="full">
                         <div class="center-desk">
                             <div class="logo">
@@ -18,27 +18,31 @@
                     <div class="right_header_info">
                         <ul>
                             <li class="d_none">
-                                <a href="/profil"><img style="margin-right: 15px;" src="icon/profil.png" alt="#" />
+                                <a href="/profil"><img style="margin-right: 15px;" src="icon/profil.png"
+                                        alt="#" />
                                     Profil </a>
                             </li>
                             <li class="d_none">
-                                <a href="/cari-produk"><img style="margin-right: 15px;" src="icon/1.png" alt="#" />
+                                <a href="/cari-produk"><img style="margin-right: 15px;" src="icon/1.png"
+                                        alt="#" />
                                     Desain Interior </a>
                             </li>
                             <li class="d_none">
                                 <a href="https://api.whatsapp.com/send/?phone=%2B6281331880750&text&app_absent=0"
                                     target="_blank">
-                                    <img style="margin-right: 15px;" src="icon/whatsapp.png" alt="#" /> {{ $profil->nowa }} </a>
+                                    <img style="margin-right: 15px;" src="icon/whatsapp.png" alt="#" />
+                                    {{ $profil->nowa }} </a>
                             </li>
                             <li class="d_none">
                                 <a href="https://www.instagram.com/lombok.interior/?igshid=YmMyMTA2M2Y%3D"
-                                    target="_blank"><img style="margin-right: 15px;" src="icon/3.png"
-                                        alt="#" /> {{ $profil->ig }}</a>
+                                    target="_blank"><img style="margin-right: 15px;" src="icon/3.png" alt="#" />
+                                    {{ $profil->ig }}</a>
                             </li class="d_none">
                             <li class="d_none">
                                 @if (Auth::check())
                                     <a href="/logout">
-                                        <img style="margin-left: 10px;" src="icon/6.png" alt="#" /> <span style="color:red"> Logout </span> </a>
+                                        <img style="margin-left: 10px;" src="icon/6.png" alt="#" /> <span
+                                            style="color:red"> Logout </span> </a>
                                 @else
                                     <a href="Javascript:void(0)" data-toggle="modal" data-target="#login">
                                         <img style="margin-left: 10px;" src="icon/5.png" alt="#" /></a>
@@ -99,6 +103,17 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="d_show">
+        <p class="text-left py-2 pl-4">
+            <a href="https://www.instagram.com/lombok.interior/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img
+                    style="margin-right: 15px;" src="icon/3.png" alt="#" /> <b> {{ $profil->ig }} </b></a>
+        </p>
+        <p class="text-left py-2 pl-4">
+            <a href="https://api.whatsapp.com/send/?phone=%2B6281331880750&text&app_absent=0" target="_blank">
+                <img style="margin-right: 15px;" src="icon/whatsapp.png" alt="#" />
+                <b> {{ $profil->nowa }} (Yuda) </b></a>
+        </p>
     </div>
     <!-- end header inner -->
 </header>

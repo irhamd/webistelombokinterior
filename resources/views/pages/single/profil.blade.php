@@ -19,15 +19,13 @@
         </div>
 
         <div class="fixed-bottom">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 alert bg-dark">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 alert" style="background: #343a40c4">
                 <div class="address">
                     <h3 class="text text-warning">Hubungi Kami </h3>
                     <ul class="loca">
-
                         <li>
-                            <a href="Javascript:void(0)"><img src="icon/2.png" alt="#"> &nbsp; <img
-                                    src="icon/whatsapp.png" alt="#"></a>(+62)
-                            813-3188-0750 &nbsp; <b class="text text-warning"> (Yuda) </b>
+                            <a href="https://api.whatsapp.com/send/?phone=%2B6281331880750&text&app_absent=0" target="_blank"><img src="icon/2.png" alt="#" /> &nbsp; <img src="icon/whatsapp.png"
+                                    alt="#" />&nbsp; {{ $profil->nowa }} &nbsp; <b class="text text-warning"> (Yuda) </b> </a>
                         </li>
                     </ul>
                 </div>

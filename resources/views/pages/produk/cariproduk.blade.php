@@ -1,7 +1,7 @@
 @extends('body')
 @section('content')
     <div class="fixed-bottom">
-        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 alert bg-dark">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 alert" style="background: #343a40c4">
             <div class="address">
                 <h3 class="text text-warning">Hubungi Kami </h3>
                 <ul class="loca">

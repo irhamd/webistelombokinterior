@@ -975,6 +975,9 @@ ul.retail li a:hover {
     text-transform: capitalize;
     transition: all 0.3s ease-in;
 }
+.capitalize {
+    text-transform: capitalize;
+}
 
 .submit:hover {
     background: #f73b0f;
